@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cold Email ROI Calculator - Grand IT Cold Email System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --primary-light: #3b82f6;
+            --accent: #60a5fa;
+            --text: #1a1a1a;
+            --text-light: #4a4a4a;
+            --bg: #f0f9ff;
+            --card: #ffffff;
+            --border: #dbeafe;
+            --success: #3b82f6;
+            --gradient-start: #1e40af;
+            --gradient-end: #3b82f6;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .background-pattern {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.03;
+            background-image: 
+                repeating-linear-gradient(45deg, transparent, transparent 35px, var(--primary) 35px, var(--primary) 36px),
+                repeating-linear-gradient(-45deg, transparent, transparent 35px, var(--primary) 35px, var(--primary) 36px);
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            position: relative;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 60px;
+            animation: fadeInDown 0.8s ease;
+        }
+
+        .header-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+            color: white;
+            padding: 8px 24px;
+            border-radius: 30px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(30, 64, 175, 0.25);
+        }
+
+        h1 {
+            font-family: 'Crimson Pro', serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 15px;
+            line-height: 1.1;
+        }
+
+        .subtitle {
+            font-size: 1.25rem;
+            color: var(--text-light);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .calculator-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: var(--card);
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+            border: 1px solid var(--border);
+            position: relative;
+            overflow: hidden;
+            animation: fadeInUp 0.6s ease;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end), var(--accent));
+        }
+
+        .card-title {
+            font-family: 'Crimson Pro', serif;
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .card-icon {
+            width: 36px;
+            height: 36px;
+            background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        .input-group {
+            margin-bottom: 32px;
+        }
+
+        .input-label {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+            font-weight: 600;
+            color: var(--text);
+        }
+
+        .input-value {
+            color: var(--primary);
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        input[type="range"] {
+            width: 100%;
+            height: 8px;
+            border-radius: 5px;
+            background: var(--border);
+            outline: none;
+            -webkit-appearance: none;
+            appearance: none;
+            position: relative;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(30, 64, 175, 0.4);
+            transition: transform 0.2s ease;
+        }
+
+        input[type="range"]::-webkit-slider-thumb:hover {
+            transform: scale(1.15);
+        }
+
+        input[type="range"]::-moz-range-thumb {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+            cursor: pointer;
+            border: none;
+            box-shadow: 0 2px 8px rgba(30, 64, 175, 0.4);
+            transition: transform 0.2s ease;
+        }
+
+        input[type="range"]::-moz-range-thumb:hover {
+            transform: scale(1.15);
+        }
+
+        .input-help {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            margin-top: 8px;
+            font-style: italic;
+        }
+
+        .result-card {
+            background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+            color: white;
+            text-align: center;
+            animation: fadeInUp 0.8s ease 0.2s both;
+        }
+
+        .result-card .card-title {
+            color: white;
+        }
+
+        .result-main {
+            margin: 40px 0;
+        }
+
+        .result-label {
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            opacity: 0.9;
+            margin-bottom: 10px;
+        }
+
+        .result-value {
+            font-family: 'Crimson Pro', serif;
+            font-size: 4.5rem;
+            font-weight: 700;
+            line-height: 1;
+            margin-bottom: 10px;
+            text-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .result-period {
+            font-size: 1.1rem;
+            opacity: 0.85;
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .metric {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+        }
+
+        .metric-label {
+            font-size: 0.85rem;
+            opacity: 0.85;
+            margin-bottom: 8px;
+        }
+
+        .metric-value {
+            font-size: 1.75rem;
+            font-weight: 700;
+        }
+
+        .breakdown-grid {
+            display: grid;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .breakdown-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: var(--bg);
+            border-radius: 12px;
+            border-left: 4px solid var(--accent);
+        }
+
+        .breakdown-label {
+            font-weight: 600;
+            color: var(--text);
+        }
+
+        .breakdown-value {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .cta-section {
+            text-align: center;
+            margin-top: 60px;
+            padding: 50px;
+            background: linear-gradient(135deg, rgba(10, 77, 74, 0.05), rgba(15, 107, 102, 0.05));
+            border-radius: 20px;
+            border: 2px dashed var(--border);
+            animation: fadeInUp 0.8s ease 0.4s both;
+        }
+
+        .cta-title {
+            font-family: 'Crimson Pro', serif;
+            font-size: 2.25rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+
+        .cta-text {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+            color: white;
+            padding: 18px 45px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            text-decoration: none;
+            box-shadow: 0 8px 25px rgba(30, 64, 175, 0.3);
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(30, 64, 175, 0.4);
+        }
+
+        .assumptions {
+            margin-top: 60px;
+            padding: 40px;
+            background: white;
+            border-radius: 16px;
+            border: 1px solid var(--border);
+            animation: fadeInUp 0.8s ease 0.6s both;
+        }
+
+        .assumptions-title {
+            font-family: 'Crimson Pro', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .assumptions-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .assumptions-list li {
+            padding: 12px 0;
+            padding-left: 30px;
+            position: relative;
+            color: var(--text-light);
+        }
+
+        .assumptions-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--success);
+            font-weight: 700;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 968px) {
+            .calculator-grid {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .result-value {
+                font-size: 3.5rem;
+            }
+
+            .metrics-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .card {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .subtitle {
+                font-size: 1rem;
+            }
+
+            .result-value {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background-pattern"></div>
+    
+    <div class="container">
+        <header class="header">
+            <div class="header-badge">Cold Email ROI Calculator</div>
+            <h1>Calculate Your Email Outreach ROI</h1>
+            <p class="subtitle">See the potential return on investment from implementing a professional cold email system for your business</p>
+        </header>
+
+        <div class="calculator-grid">
+            <div class="card">
+                <h2 class="card-title">
+                    <span class="card-icon">📊</span>
+                    Campaign Parameters
+                </h2>
+
+                <div class="input-group">
+                    <label class="input-label">
+                        <span>Emails Sent Per Month</span>
+                        <span class="input-value" id="emailsSentValue">10,000</span>
+                    </label>
+                    <input type="range" id="emailsSent" min="1000" max="100000" step="1000" value="10000">
+                    <p class="input-help">Number of cold emails you plan to send monthly</p>
+                </div>
+
+                <div class="input-group">
+                    <label class="input-label">
+                        <span>Response Rate (%)</span>
+                        <span class="input-value" id="responseRateValue">5%</span>
+                    </label>
+                    <input type="range" id="responseRate" min="1" max="20" step="0.5" value="5">
+                    <p class="input-help">Industry average: 3-8% for well-targeted campaigns</p>
+                </div>
+
+                <div class="input-group">
+                    <label class="input-label">
+                        <span>Meeting Booking Rate (%)</span>
+                        <span class="input-value" id="meetingRateValue">30%</span>
+                    </label>
+                    <input type="range" id="meetingRate" min="10" max="60" step="5" value="30">
+                    <p class="input-help">Percentage of responses that book a meeting</p>
+                </div>
+
+                <div class="input-group">
+                    <label class="input-label">
+                        <span>Close Rate (%)</span>
+                        <span class="input-value" id="closeRateValue">20%</span>
+                    </label>
+                    <input type="range" id="closeRate" min="5" max="50" step="5" value="20">
+                    <p class="input-help">Percentage of meetings that convert to customers</p>
+                </div>
+
+                <div class="input-group">
+                    <label class="input-label">
+                        <span>Average Deal Value ($)</span>
+                        <span class="input-value" id="dealValueValue">$5,000</span>
+                    </label>
+                    <input type="range" id="dealValue" min="500" max="50000" step="500" value="5000">
+                    <p class="input-help">Your average customer lifetime value or deal size</p>
+                </div>
+
+                <div class="input-group">
+                    <label class="input-label">
+                        <span>Monthly Investment ($)</span>
+                        <span class="input-value" id="investmentValue">$3,500</span>
+                    </label>
+                    <input type="range" id="investment" min="500" max="15000" step="500" value="3500">
+                    <p class="input-help">Total cost: software, agency fees, infrastructure</p>
+                </div>
+            </div>
+
+            <div class="card result-card">
+                <h2 class="card-title">
+                    <span class="card-icon">💰</span>
+                    Your ROI Projection
+                </h2>
+
+                <div class="result-main">
+                    <div class="result-label">Return on Investment</div>
+                    <div class="result-value" id="roiValue">+485%</div>
+                    <div class="result-period">Monthly ROI</div>
+                </div>
+
+                <div class="metrics-grid">
+                    <div class="metric">
+                        <div class="metric-label">Monthly Responses</div>
+                        <div class="metric-value" id="responsesValue">500</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-label">Meetings Booked</div>
+                        <div class="metric-value" id="meetingsValue">150</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-label">New Customers</div>
+                        <div class="metric-value" id="customersValue">30</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-label">Revenue Generated</div>
+                        <div class="metric-value" id="revenueValue">$150k</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2 class="card-title">
+                <span class="card-icon">📈</span>
+                Revenue Breakdown
+            </h2>
+            <div class="breakdown-grid">
+                <div class="breakdown-item">
+                    <span class="breakdown-label">Total Monthly Revenue</span>
+                    <span class="breakdown-value" id="totalRevenue">$150,000</span>
+                </div>
+                <div class="breakdown-item">
+                    <span class="breakdown-label">Total Monthly Investment</span>
+                    <span class="breakdown-value" id="totalInvestment">$3,500</span>
+                </div>
+                <div class="breakdown-item">
+                    <span class="breakdown-label">Net Profit</span>
+                    <span class="breakdown-value" id="netProfit">$146,500</span>
+                </div>
+                <div class="breakdown-item">
+                    <span class="breakdown-label">Annual Revenue Potential</span>
+                    <span class="breakdown-value" id="annualRevenue">$1,800,000</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="cta-section">
+            <h2 class="cta-title">Ready to Transform Your Outreach?</h2>
+            <p class="cta-text">Based on your projections, a professional cold email system could generate significant ROI for your business. Start building your pipeline today.</p>
+            <a href="https://www.grandit.us/cold-email-system" class="cta-button" target="_blank">Get Started with Grand IT →</a>
+        </div>
+
+        <div class="assumptions">
+            <h3 class="assumptions-title">Calculator Assumptions</h3>
+            <ul class="assumptions-list">
+                <li>Response rates vary based on targeting quality, messaging, and industry (typical range: 3-8%)</li>
+                <li>Meeting booking rates depend on qualification process and sales skills (typical range: 20-40%)</li>
+                <li>Close rates vary significantly by industry, deal complexity, and sales process (typical range: 10-30%)</li>
+                <li>Investment includes software costs, infrastructure setup, data acquisition, and agency/management fees</li>
+                <li>Results assume proper email deliverability setup, domain warming, and compliance with email regulations</li>
+                <li>Actual results may vary based on market conditions, targeting accuracy, and campaign execution quality</li>
+                <li>ROI calculations are projections and not guaranteed outcomes</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // Get all input elements
+        const emailsSent = document.getElementById('emailsSent');
+        const responseRate = document.getElementById('responseRate');
+        const meetingRate = document.getElementById('meetingRate');
+        const closeRate = document.getElementById('closeRate');
+        const dealValue = document.getElementById('dealValue');
+        const investment = document.getElementById('investment');
+
+        // Get all display elements
+        const emailsSentValue = document.getElementById('emailsSentValue');
+        const responseRateValue = document.getElementById('responseRateValue');
+        const meetingRateValue = document.getElementById('meetingRateValue');
+        const closeRateValue = document.getElementById('closeRateValue');
+        const dealValueValue = document.getElementById('dealValueValue');
+        const investmentValue = document.getElementById('investmentValue');
+
+        const roiValue = document.getElementById('roiValue');
+        const responsesValue = document.getElementById('responsesValue');
+        const meetingsValue = document.getElementById('meetingsValue');
+        const customersValue = document.getElementById('customersValue');
+        const revenueValue = document.getElementById('revenueValue');
+        const totalRevenue = document.getElementById('totalRevenue');
+        const totalInvestment = document.getElementById('totalInvestment');
+        const netProfit = document.getElementById('netProfit');
+        const annualRevenue = document.getElementById('annualRevenue');
+
+        function formatNumber(num) {
+            return num.toLocaleString('en-US');
+        }
+
+        function formatCurrency(num) {
+            if (num >= 1000000) {
+                return '$' + (num / 1000000).toFixed(1) + 'M';
+            } else if (num >= 1000) {
+                return '$' + (num / 1000).toFixed(0) + 'k';
+            } else {
+                return '$' + num.toLocaleString('en-US');
+            }
+        }
+
+        function calculate() {
+            // Get values
+            const emails = parseFloat(emailsSent.value);
+            const respRate = parseFloat(responseRate.value) / 100;
+            const meetRate = parseFloat(meetingRate.value) / 100;
+            const closeRt = parseFloat(closeRate.value) / 100;
+            const deal = parseFloat(dealValue.value);
+            const invest = parseFloat(investment.value);
+
+            // Update display values
+            emailsSentValue.textContent = formatNumber(emails);
+            responseRateValue.textContent = responseRate.value + '%';
+            meetingRateValue.textContent = meetingRate.value + '%';
+            closeRateValue.textContent = closeRate.value + '%';
+            dealValueValue.textContent = formatCurrency(deal);
+            investmentValue.textContent = formatCurrency(invest);
+
+            // Calculate metrics
+            const responses = Math.round(emails * respRate);
+            const meetings = Math.round(responses * meetRate);
+            const customers = Math.round(meetings * closeRt);
+            const revenue = customers * deal;
+            const roi = ((revenue - invest) / invest) * 100;
+            const profit = revenue - invest;
+            const annual = revenue * 12;
+
+            // Update results
+            roiValue.textContent = (roi >= 0 ? '+' : '') + roi.toFixed(0) + '%';
+            responsesValue.textContent = formatNumber(responses);
+            meetingsValue.textContent = formatNumber(meetings);
+            customersValue.textContent = formatNumber(customers);
+            revenueValue.textContent = formatCurrency(revenue);
+            totalRevenue.textContent = formatCurrency(revenue);
+            totalInvestment.textContent = formatCurrency(invest);
+            netProfit.textContent = formatCurrency(profit);
+            annualRevenue.textContent = formatCurrency(annual);
+
+            // Change color based on ROI
+            if (roi < 0) {
+                roiValue.style.color = '#dc2626';
+            } else if (roi < 100) {
+                roiValue.style.color = '#f59e0b';
+            } else {
+                roiValue.style.color = 'white';
+            }
+        }
+
+        // Add event listeners
+        emailsSent.addEventListener('input', calculate);
+        responseRate.addEventListener('input', calculate);
+        meetingRate.addEventListener('input', calculate);
+        closeRate.addEventListener('input', calculate);
+        dealValue.addEventListener('input', calculate);
+        investment.addEventListener('input', calculate);
+
+        // Initial calculation
+        calculate();
+    </script>
+</body>
+</html>

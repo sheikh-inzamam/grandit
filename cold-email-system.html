@@ -1,0 +1,3945 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cold Email Suite - Plug-And-Play Email Campaigns</title>-->
+    
+      
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Cold Email Engine | Grand IT - Innovation Solution">
+
+    <!-- ========== Page Title ========== -->
+    <title>Cold Email Engine | Grand IT - Innovation Solution</title>
+    <!-- ========== Favicon Icon ========== -->
+    <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-icon">
+    <!-- ========== Start Stylesheet ========== -->
+    <link href="../cdn.jsdelivr.net/npm/bootstrap%405.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="/assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/assets/css/themify-icons.css" rel="stylesheet" />
+    <link href="/assets/css/flaticon-set.css" rel="stylesheet" />
+    <link href="/assets/css/magnific-popup.css" rel="stylesheet" />
+    <link href="/assets/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="/assets/css/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="/assets/css/animate.css" rel="stylesheet" />
+    <link href="/assets/css/bootsnav.css" rel="stylesheet" />
+    <link href="/assets/css/responsive.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css" />
+    <link href="/assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" integrity="sha512-vKMx8UnXk60zUwyUnUPM3HbQo8QfmNx7+ltw8Pm5zLusl1XIfwcxo8DbWCqMGKaWeNxWA8yrx5v3SaVpMvR3CA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+    <style>
+    
+   
+        /* * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: #ffffff;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .nav {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s;
+        }
+
+        .nav-links a:hover {
+            opacity: 0.8;
+        }*/
+
+
+
+        .hero {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+            padding: 6rem 2rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: white;
+            color: #1e3a8a;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 30px rgba(0,0,0,0.3);
+        }
+
+        /*.container1 {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }*/
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #1e3a8a;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.1rem;
+            color: #6b7280;
+            margin-bottom: 3rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;    /* Center horizontally */
+    text-align: center; 
+            padding: 2rem;
+            background: #f8fafc;
+            border-radius: 12px;
+            border: 2px solid #e2e8f0;
+            transition: all 0.3s;
+        }
+        
+
+        .feature-card:hover {
+            border-color: #3b82f6;
+            box-shadow: 0 8px 25px rgba(59, 130, 246, 0.15);
+            transform: translateY(-4px);
+        }
+
+        .feature-icon img {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #3b82f6, #1e3a8a);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            padding: 8px;
+        }
+
+        .feature-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.75rem;
+            color: #1e3a8a;
+        }
+
+        .feature-card p {
+            color: #4b5563;
+            line-height: 1.7;
+        }
+
+        .pricing {
+            background: #f8fafc;
+            padding: 4rem 2rem;
+        }
+
+        .setup-cost {
+            text-align: center;
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            margin-bottom: 3rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .setup-cost h3 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .setup-cost .price {
+            font-size: 3rem;
+            font-weight: 800;
+        }
+
+        .setup-cost p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-top: 0.5rem;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .pricing-card {
+            background: white;
+            padding: 0;
+            border-radius: 12px;
+            border: 2px solid #e2e8f0;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pricing-card:hover {
+            border-color: #3b82f6;
+            box-shadow: 0 12px 35px rgba(59, 130, 246, 0.2);
+            transform: translateY(-6px);
+        }
+
+        .pricing-card.featured {
+            border-color: #3b82f6;
+            box-shadow: 0 8px 30px rgba(59, 130, 246, 0.25);
+        }
+
+        .pricing-header {
+            background: linear-gradient(135deg, #3b82f6, #1e3a8a);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .pricing-card.featured .pricing-header {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+        }
+
+        .badger {
+            background: rgba(255,255,255,0.2);
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            display: inline-block;
+            margin-bottom: 0.5rem;
+        }
+
+        .plan-name {
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+        }
+
+        .pricing-body {
+            padding: 2rem;
+        }
+
+        .pricing-row {
+            padding: 1.25rem 0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .pricing-row:last-child {
+            border-bottom: none;
+        }
+
+        .pricing-label {
+            font-size: 0.9rem;
+            color: #6b7280;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.5rem;
+        }
+
+        .pricing-value {
+            font-size: 1.1rem;
+            color: #1a1a1a;
+            font-weight: 600;
+        }
+
+        .pricing-value.highlight {
+            color: #3b82f6;
+            font-size: 1.3rem;
+        }
+
+        .included-features {
+            background: #f8fafc;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+
+        .included-features h4 {
+            font-size: 1rem;
+            color: #1e3a8a;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .included-features ul {
+            list-style: none;
+            font-size: 0.95rem;
+            color: #4b5563;
+            line-height: 1.8;
+        }
+
+        .included-features li {
+            padding-left: 1.5rem;
+            position: relative;
+            margin-bottom: 0.5rem;
+        }
+
+        .included-features li:before {
+            content: "✓";
+            color: #10b981;
+            font-weight: 700;
+            position: absolute;
+            left: 0;
+        }
+
+        .cost-breakdown {
+            background: #fef3c7;
+            border: 2px solid #fbbf24;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+
+        .cost-breakdown h4 {
+            font-size: 1rem;
+            color: #92400e;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .cost-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem 0;
+            color: #78350f;
+        }
+
+        .cost-item.total {
+            border-top: 2px solid #fbbf24;
+            margin-top: 0.5rem;
+            padding-top: 1rem;
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: #92400e;
+        }
+
+        .recurring-cost {
+            background: #dbeafe;
+            border: 2px solid #3b82f6;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .recurring-cost h4 {
+            font-size: 0.9rem;
+            color: #1e40af;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .recurring-cost .price {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #1e3a8a;
+        }
+
+        .recurring-cost .price small {
+            font-size: 1rem;
+            font-weight: 500;
+            color: #6b7280;
+        }
+
+        .recurring-cost p {
+            font-size: 0.9rem;
+            color: #475569;
+            margin-top: 0.5rem;
+        }
+
+        .plan-button {
+            display: block;
+            width: 100%;
+            padding: 1.2rem;
+            background: linear-gradient(135deg, #3b82f6, #1e3a8a);
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            margin-top: 1.5rem;
+        }
+
+        .plan-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+        }
+
+        .pricing-card.featured .plan-button {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+        }
+
+        .process {
+            padding: 4rem 2rem;
+        }
+
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .process-step {
+            text-align: center;
+            position: relative;
+        }
+
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #3b82f6, #1e3a8a);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0 auto 1.5rem;
+        }
+
+        .process-step h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.75rem;
+            color: #1e3a8a;
+        }
+
+        .process-step p {
+            color: #4b5563;
+        }
+
+        .cta-section {
+            /*background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);*/
+          background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+            color: white;
+            padding: 5rem 2rem;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+
+        .footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 3rem 2rem 1.5rem;
+            text-align: center;
+        }
+
+        .footer p {
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            /*.nav-links {
+                display: none;
+            }*/
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .setup-cost .price {
+                font-size: 2.5rem;
+            }
+        }
+.billing-toggle {
+    display: inline-flex;          /* NOT flex */
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0 auto 3rem;           /* center horizontally */
+    padding: 0.4rem;
+    border-radius: 999px;
+    background: #e5edff;
+}
+
+
+.toggle-btn {
+    padding: 0.7rem 1.75rem;
+    border-radius: 999px;
+    border: none; /* REMOVE BORDER */
+    background: transparent;
+    font-weight: 700;
+    cursor: pointer;
+    color: #1e3a8a;
+    transition: all 0.25s ease;
+    outline: none;
+}
+
+.toggle-btn span {
+    font-size: 0.8rem;
+    opacity: 0.75;
+}
+
+/* Active tab */
+.toggle-btn.active {
+    background: linear-gradient(135deg, #3b82f6, #1e3a8a);
+    color: white;
+    box-shadow: 0 6px 18px rgba(59,130,246,0.35);
+}
+
+/* Remove browser focus ring */
+.toggle-btn:focus,
+.toggle-btn:focus-visible {
+    outline: none;
+}
+
+/* Optional hover polish */
+.toggle-btn:not(.active):hover {
+    background: rgba(59,130,246,0.1);
+}
+
+ 
+
+    </style>
+    
+    <style>
+    
+  .log {
+  display: block;
+  margin: 0 auto 20px auto;  /* Center horizontally, bottom margin */
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+/* Small screens (phones) */
+@media (max-width: 767px) {
+  .log {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 12px;
+    margin-left: auto;
+    margin-right: auto;      /* Center */
+  }
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .log {
+    width: 150px;
+    height: 100px;
+    margin-bottom: 0;        /* Remove bottom margin */
+    margin-left: 0;          /* Align left */
+    margin-right: initial;   /* Remove centering */
+  }
+}
+
+/* Large screens (desktops) */
+@media (min-width: 1025px) {
+  .log {
+    width: 200px;
+    height: 100px;
+    margin-bottom: 0;        /* Remove bottom margin */
+    margin-left: 0;          /* Align left */
+    margin-right: initial;   /* Remove centering */
+  }
+}
+
+
+        
+    </style>
+
+<style>
+  .testimonials {
+    max-width: 1200px;
+    margin: 0 auto 100px auto;
+    padding: 0 20px;
+  }
+
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+
+  @media (max-width: 900px) {
+    .testimonials-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .testimonial-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    overflow: hidden;
+    background: #fff;
+  }
+
+  .testimonial-content {
+    padding: 24px;
+  }
+
+  .profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+
+  .profile img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .profile strong {
+    display: block;
+    font-size: 16px;
+  }
+
+  .profile span {
+    font-size: 14px;
+    color: #6b7280;
+  }
+
+  .testimonial-title {
+    font-size: 22px;
+    margin: 16px 0 20px;
+  }
+
+  .box {
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 12px;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .before {
+    border: 1px solid #e5e7eb;
+    background: #fafafa;
+  }
+
+  .after {
+    background: #f1f5ff;
+  }
+
+  .box strong {
+    display: block;
+    margin-bottom: 6px;
+  }
+</style> 
+
+<style>
+  .pain-section {
+    background: #f7fafc;
+    padding: 80px 20px;
+  }
+
+  .pain-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .pain-title {
+    font-size: 44px;
+    font-weight: 700;
+    margin-bottom: 70px;
+  }
+
+  .pain-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+  }
+
+  @media (max-width: 900px) {
+    .pain-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .pain-title {
+      font-size: 32px;
+    }
+  }
+
+  .pain-card {
+    background: #ffffff;
+    border: 1px solid #e5edf5;
+    border-radius: 16px;
+    padding: 30px 32px;
+    text-align: left;
+    transition: all 0.2s ease;
+  }
+
+  .pain-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+  }
+
+  .pain-pill {
+    display: inline-block;
+    background: #eef2ff;
+    color: #3730a3;
+    padding: 6px 14px;
+    font-size: 13px;
+    border-radius: 999px;
+    margin-bottom: 14px;
+    font-weight: 500;
+  }
+
+  .pain-text {
+    font-size: 22px;
+    line-height: 1.4;
+    font-weight: 600;
+    color: #0f172a;
+  }
+</style>
+
+<style>
+       
+        
+        .hero-section {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            padding: 80px 20px;
+            text-align: center;
+            color: white;
+        }
+        
+        .tagline {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 30px;
+            padding: 12px 30px;
+            display: inline-block;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+        
+        .main-heading {
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 1.2;
+            max-width: 900px;
+            margin: 0 auto 25px;
+        }
+        
+        .subheading {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1.6;
+            max-width: 700px;
+            margin: 0 auto 50px;
+            opacity: 0.95;
+        }
+        
+        .cta-button {
+            background: rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(10px);
+            border: none;
+            border-radius: 50px;
+            padding: 18px 80px;
+            font-size: 20px;
+            font-weight: 600;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-block;
+            margin-bottom: 60px;
+        }
+        
+        .cta-button:hover {
+            background: rgba(255, 255, 255, 0.35);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .feature-box {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 60px 40px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .feature-heading {
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 30px;
+        }
+        
+        .feature-subtagline {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 30px;
+            padding: 10px 25px;
+            display: inline-block;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 30px;
+        }
+        
+        .feature-description-box {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 30px;
+            line-height: 1.8;
+            font-size: 16px;
+        }
+        
+        @media (max-width: 768px) {
+            .main-heading {
+                font-size: 32px;
+            }
+            
+            .feature-heading {
+                font-size: 28px;
+            }
+            
+            .cta-button {
+                padding: 15px 50px;
+                font-size: 18px;
+            }
+            
+            .feature-box {
+                padding: 40px 25px;
+            }
+        }
+    </style>
+    
+    <style>
+        
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .testimonial-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .testimonial-title {
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 25px;
+            color: #000;
+        }
+        
+        .testimonial-content {
+            background: #f9f9f9;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 30px;
+            flex-grow: 1;
+        }
+        
+        .testimonial-subtitle {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #000;
+        }
+        
+        .testimonial-text {
+            font-size: 15px;
+            line-height: 1.7;
+            color: #333;
+        }
+        
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .profile-image {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+            font-size: 18px;
+        }
+        
+        .profile-image.green {
+            background: linear-gradient(135deg, #56ab2f 0%, #a8e063 100%);
+        }
+        
+        .profile-image.pink {
+            background: linear-gradient(135deg, #ff6b9d 0%, #c86dd7 100%);
+        }
+        
+        .profile-image.blue {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        }
+        
+        .profile-info {
+            flex: 1;
+        }
+        
+        .profile-name {
+            font-size: 16px;
+            font-weight: 600;
+            color: #000;
+            margin-bottom: 3px;
+        }
+        
+        .profile-title {
+            font-size: 14px;
+            color: #666;
+        }
+        
+        .feature-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        .feature-heading {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            color: #000;
+        }
+        
+        .feature-content {
+            background: #f9f9f9;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 30px;
+        }
+        
+        .feature-subtitle {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #000;
+        }
+        
+        .feature-text {
+            font-size: 15px;
+            line-height: 1.7;
+            color: #333;
+        }
+        
+        @media (max-width: 968px) {
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .testimonial-title {
+                font-size: 24px;
+            }
+            
+            .feature-heading {
+                font-size: 28px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                padding: 30px 15px;
+            }
+            
+            .testimonial-card,
+            .feature-card {
+                padding: 25px;
+            }
+            
+            .testimonial-title {
+                font-size: 22px;
+            }
+            
+            .feature-heading {
+                font-size: 24px;
+            }
+        }
+    </style>
+    
+    <style>
+  .title-image-desc-section {
+    padding: 50px 20px;
+    background: #ffffff;
+  }
+
+  .title-image-desc-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .title-image-desc-container h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #000;
+  }
+
+  .title-image-desc-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    border: 1px solid #e5e7eb;
+    margin-bottom: 40px;
+  }
+
+  .title-image-desc-text {
+    text-align: left;
+    
+    font-size: 1.1rem;
+    color: #6b7280;
+    line-height: 1.75;
+  
+  }
+
+  .title-image-desc-text p {
+    margin-bottom: 20px;
+  }
+  
+  html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+</style>
+    
+     <style>  
+    .expect-section {
+  --brand-blue: #3F8CFF;
+  padding: 80px 20px;
+  background: #f7f9fc;
+  font-family: Inter, sans-serif;
+}
+
+
+
+.expect-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 32px;
+}
+
+.expect-left {
+  /*background: #3F8CFF; /* brand blue applied directly */
+  background: linear-gradient(
+    135deg,
+    #1f4fd8 0%,
+    #2563eb 40%,
+    #1e40af 100%
+  );
+  color: #fff;
+  padding: 48px;
+  border-radius: 20px;
+}
+
+.expect-left h2 {
+  font-size: 32px;
+  line-height: 1.3;
+  margin-bottom: 36px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px 24px;
+}
+
+.feature {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.check {
+  width: 28px;
+  height: 28px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.feature p {
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.expect-right {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  border: 1px solid #e5eaf0;
+}
+
+.expect-right h3 {
+  font-size: 26px;
+  margin-bottom: 32px;
+}
+
+.expect-box {
+  background: #f8faff;
+  border: 1px solid #e5eaf0;
+  padding: 20px 22px;
+  border-radius: 14px;
+  margin-bottom: 18px;
+}
+
+.expect-box h4 {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.expect-box p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #4b5563;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .expect-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.expect-grid {
+  align-items: stretch;
+}
+
+.expect-left h2 {
+  font-size: 36px;
+  line-height: 1.25;
+  margin-bottom: 44px;
+}
+
+.feature p {
+  font-size: 17px;
+  line-height: 1.45;
+}
+
+.check {
+  width: 32px;
+  height: 32px;
+  font-size: 15px;
+}
+
+.expect-right h3 {
+  font-size: 22px;
+  margin-bottom: 24px;
+}
+
+.expect-box h4 {
+  font-size: 15px;
+}
+
+.expect-box p {
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.expect-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+</style> 
+
+<style>
+    .how-it-works {
+  padding: 30px 20px;
+  background: #f7fafc;
+  font-family: Inter, sans-serif;
+}
+
+.how-container {
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.how-pill {
+  display: inline-block;
+  padding: 6px 14px;
+  font-size: 13px;
+  border-radius: 999px;
+  background: #eef2f7;
+  color: #111827;
+  margin-bottom: 18px;
+}
+
+.how-title {
+  font-size: 32px;
+  line-height: 1.25;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 48px;
+}
+
+/* Step block */
+.how-step {
+  margin-bottom: 56px;
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+  margin-bottom: 14px;
+  font-size: 18px;
+}
+
+.how-step h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #0f172a;
+}
+
+.how-step p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #475569;
+  margin-bottom: 16px;
+}
+
+/* Deliverables card */
+.deliverables {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 14px 16px;
+}
+
+.deliverables strong {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 6px;
+  color: #0f172a;
+}
+
+.deliverables ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.deliverables li {
+  font-size: 13px;
+  color: #475569;
+  line-height: 1.6;
+}
+
+</style>
+<style>
+    .cta-wrap {
+  padding: 80px 20px;
+  background: #f7fafc;
+  font-family: Inter, sans-serif;
+}
+
+.cta-box {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 72px 48px;
+  border-radius: 28px;
+
+  background: linear-gradient(
+    135deg,
+    #1f4fd8 0%,
+    #2563eb 40%,
+    #1e40af 100%
+  );
+
+  text-align: center;
+  color: #ffffff;
+}
+
+.cta-box h2 {
+  font-size: 38px;
+  line-height: 1.25;
+  font-weight: 700;
+  margin-bottom: 36px;
+}
+
+/* Main CTA button */
+.cta-button {
+  display: block;
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto 32px auto;
+  padding: 22px 24px;
+
+  background: #58c3ff;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 600;
+  border-radius: 999px;
+  text-decoration: none;
+}
+
+/* Small helper pill */
+.cta-sub {
+  display: inline-block;
+  padding: 10px 18px;
+  font-size: 14px;
+  border-radius: 10px;
+
+  background: rgba(255, 255, 255, 0.18);
+  margin-bottom: 32px;
+}
+
+/* Bottom points */
+.cta-points {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-chip {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  background: rgba(255, 255, 255, 0.15);
+  padding: 14px 20px;
+  border-radius: 14px;
+  font-size: 15px;
+}
+
+/* Check icon */
+.cta-chip .check {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cta-box h2 {
+    font-size: 28px;
+  }
+
+  .cta-button {
+    font-size: 20px;
+  }
+}
+
+</style>
+
+
+<style>
+    
+
+        .trusted-section {
+            width: 100%;
+            text-align: center;
+        }
+
+        .trusted-title {
+            color: white;
+            font-size: 26px;
+            font-weight: 400;
+            letter-spacing: 1px;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+
+        .logo-container {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            padding: 20px 0;
+            mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+            -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+        }
+
+        .logo-scroll {
+            display: flex;
+            gap: 80px;
+            width: max-content;
+            animation: scroll 30s linear infinite;
+        }
+
+        .logo-track {
+            display: flex;
+            align-items: center;
+            gap: 80px;
+        }
+
+        .logo-item {
+            flex-shrink: 0;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 150px;
+        }
+
+        .logo-item img {
+            height: 100%;
+            width: auto;
+            object-fit: contain;
+            filter: brightness(0) invert(1);
+            opacity: 0.85;
+            transition: opacity 0.3s ease;
+        }
+
+        .logo-item:hover img {
+            opacity: 1;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(calc(-150px * 6 - 80px * 6));
+            }
+        }
+
+        .logo-scroll:hover {
+            animation-play-state: paused;
+        }
+    </style>
+    
+        <style>
+        .faq-section {
+  padding: 80px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.faq-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+/* Left column */
+.faq-left h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #0a2540;
+  margin-bottom: 16px;
+}
+
+.faq-left p {
+  font-size: 15px;
+  color: #667085;
+}
+
+.faq-left a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Right column */
+.faq-right {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Card */
+.faq-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 18px 20px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.05);
+  border: 1px solid #f0f0f0;
+}
+
+/* Summary */
+.faq-card summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: #0a2540;
+  list-style: none;
+  position: relative;
+  padding-right: 24px;
+}
+
+.faq-card summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Chevron */
+.faq-card summary::after {
+  content: "⌄";
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 18px;
+  transition: transform 0.25s ease;
+}
+
+.faq-card[open] summary::after {
+  transform: rotate(180deg);
+}
+
+/* Content */
+.faq-card p {
+  margin-top: 14px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #667085;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .faq-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+    </style>
+
+<style>
+    .comparison-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.comparison-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 60px;
+  gap: 40px;
+}
+
+.header-left h2 {
+  font-size: 42px;
+  line-height: 1.15;
+  font-weight: 700;
+  color: #0f2a44;
+}
+
+.header-right {
+  text-align: left;
+  max-width: 360px;
+}
+
+.header-right p {
+  font-size: 16px;
+  color: #6b7c93;
+  margin-bottom: 16px;
+}
+
+.btn-primary {
+  display: inline-block;
+  background: #2f80ed;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.comparison-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.comparison-card {
+  border: 1px dashed #e2e8f0;
+  border-radius: 16px;
+  padding: 32px 28px;
+  background: transparent;
+}
+
+.card-header {
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+  color: #0f2a44;
+  margin-bottom: 28px;
+}
+
+.card-header.muted {
+  color: #7b8aa0;
+}
+
+.brand-logo {
+  height: 28px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.pill {
+  border: 1px dashed #dbe4f0;
+  border-radius: 12px;
+  padding: 14px 16px;
+  font-size: 14px;
+  color: #516175;
+  text-align: center;
+  background: #fafcff;
+}
+
+.pill.blue {
+  color: #2f80ed;
+  border-color: #cfe0ff;
+  background: #f6f9ff;
+}
+
+.pill.green {
+  color: #1f9d55;
+  border-color: #c9f0db;
+  background: #f3fcf7;
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .comparison-header {
+    flex-direction: column;
+  }
+
+  .comparison-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .header-left h2 {
+    font-size: 34px;
+  }
+}
+
+</style>
+
+<style>
+    .case-studies {
+  padding: 80px 24px;
+  background: #f6f9fc;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.case-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.case-card {
+  background: #ffffff;
+  border: 1px solid #e4ebf3;
+  border-radius: 20px;
+  padding: 32px;
+}
+
+.testimonial-img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+
+.logo {
+  height: 36px;
+  margin-bottom: 16px;
+}
+
+.badge {
+  width: 40px;
+  height: 40px;
+  background: #111;
+  color: #fff;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.case-card h2 {
+  font-size: 26px;
+  line-height: 1.3;
+  margin-bottom: 24px;
+  color: #0f172a;
+}
+
+.info-card {
+  border: 1px solid #e4ebf3;
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+.info-card h4 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #0f172a;
+}
+
+.info-card p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #475569;
+}
+
+.info-card.highlight {
+  background: #f1f6ff;
+  border-color: #dbe7ff;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .case-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+</style>
+<style>
+    .launchflow-wrap {
+  padding-top: 50px;
+  background: #ffffff;
+  font-family: Inter, system-ui, -apple-system, sans-serif;
+}
+
+.launchflow-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* HEADER */
+.launchflow-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 48px;
+  margin-bottom: 96px;
+}
+
+.launchflow-title {
+  font-size: 44px;
+  line-height: 1.15;
+  font-weight: 700;
+  color: #0b1f3b;
+}
+
+.launchflow-intro {
+  max-width: 380px;
+}
+
+.launchflow-subtitle {
+  font-size: 15px;
+  color: #6b7280;
+  margin-bottom: 18px;
+}
+
+.launchflow-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 999px;
+  background: #2f80ff;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* STEPS */
+.launchflow-step {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  margin-bottom: 110px;
+}
+
+.launchflow-flip {
+  flex-direction: row-reverse;
+}
+
+.launchflow-media {
+  flex: 1;
+  background: #f8fafc;
+  border-radius: 18px;
+  padding: 36px;
+}
+
+.launchflow-media img {
+  width: 100%;
+  border-radius: 14px;
+  display: block;
+}
+
+.launchflow-content {
+  flex: 1;
+}
+
+.launchflow-index {
+  font-size: 82px;
+  font-weight: 700;
+  color: #e5e7eb;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.launchflow-heading {
+  font-size: 26px;
+  font-weight: 700;
+  color: #0b1f3b;
+  margin-bottom: 18px;
+}
+
+.launchflow-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.launchflow-list li {
+  font-size: 15px;
+  color: #374151;
+  margin-bottom: 12px;
+  padding-left: 24px;
+  position: relative;
+}
+
+.launchflow-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #2f80ff;
+  font-weight: 700;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .launchflow-header {
+    flex-direction: column;
+  }
+
+  .launchflow-step,
+  .launchflow-flip {
+    flex-direction: column;
+  }
+
+  .launchflow-index {
+    font-size: 60px;
+  }
+}
+
+
+
+</style>
+
+
+
+
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+</head>
+<body>
+    
+    <div class="se-pre-con"></div>  
+  <!--  <header class="header">
+        <nav class="nav">
+            <div class="logo">Cold Email Suite</div>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#process">How It Works</a></li>
+                <li><a href="#cta">Get Started</a></li>
+            </ul>
+        </nav>
+    </header>-->
+    
+     <header id="home">
+
+        <!-- Start Navigation -->
+        <nav class="navbar navbar-default navbar-fixed bootsnav" style =" padding-left: 3rem;
+    padding-right: 3rem;">
+
+            <div class="container1">
+                <div class="nav-box">
+
+                    <!-- Start Header Navigation -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <a class="navbar-brand" href="index.html">
+                            <img src="/assets/images/Grand%20IT-51.png" class="logo logo-display" alt="Logo">
+                        </a>
+                    </div>
+                    <!-- End Header Navigation -->
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="navbar-menu">
+                        <ul class="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp">
+                        <li>
+                            <a href="https://www.grandit.us" class="active">Home</a>
+                        </li>
+                        <li>
+                            <a href="#our-process" >Our Process</a>
+                        </li>
+                        <li>
+                            <a href="#case-studies">Case Studies</a>
+                        </li>
+
+                        <li>
+                            <a href="#how" >Deliverables</a>
+                        </li>
+                        <li>
+                            <a href="#pricing" >Pricing</a>
+                        </li>
+                        <li>
+                            <a href="https://www.grandit.us/contact-us.php">Contact</a>
+                        </li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div>
+            </div>
+
+        </nav>
+        <!-- End Navigation -->
+
+    </header>
+
+    <section class="hero">
+        <h1 style="color:white; margin-top:50px;">Plug-And-Play Cold Email Campaigns</h1>
+        <p style="color:white;">Fully Managed AI Outbound Engine by the Industry’s #1 Experts</p>
+        <p style="color:white;">We handle everything from strategy to execution. Focus on closing deals while we fill your calendar with qualified meetings.</p>
+        <a href="#pricing" class="cta-button">View Pricing</a>
+        
+        <div class="trusted-section" style="margin-top:80px;">
+        <div class="trusted-title">Trusted By</div>
+        
+        <div class="logo-container">
+            <div class="logo-scroll">
+                <div class="logo-track">
+                    <div class="logo-item">
+                        <img src="/assets/images/l1.webp" alt="Sign Studio">
+                    </div>
+                    <div class="logo-item">
+                        <img src="/assets/images/l2.webp" alt="Salesurf">
+                    </div>
+                    <div class="logo-item">
+                        <img src="/assets/images/l3.webp" alt="SolvIT">
+                    </div>
+                    <div class="logo-item">
+                        <img src="/assets/images/l4.webp" alt="Ascension">
+                    </div>
+                    <div class="logo-item">
+                        <img src="/assets/images/l5.webp" alt="TikScale">
+                    </div>
+                    <div class="logo-item">
+                        <img src="/assets/images/l6.webp" alt="Company 6">
+                    </div>
+                    <div class="logo-item">
+                        <img src="/assets/images/l7.webp" alt="Company 7">
+                    </div>
+                    <div class="logo-item">
+                        <img src="/assets/images/l8.webp" alt="Company 8">
+                    </div>
+                </div>
+                <div class="logo-track">
+                    <div class="logo-item">
+                        <img src="/assets/images/l1.webp" alt="Sign Studio">
+                    </div>
+                    <div class="logo-item">
+                        <img src="/assets/images/l2.webp" alt="Salesurf">
+                    </div>
+                    <div class="logo-item">
+                        <img src="/assets/images/l3.webp" alt="SolvIT">
+                    </div>
+                    <div class="logo-item">
+                        <img src="/assets/images/l4.webp" alt="Ascension">
+                    </div>
+                    <div class="logo-item">
+                        <img src="/assets/images/l5.webp" alt="TikScale">
+                    </div>
+                    <div class="logo-item">
+                        <img src="/assets/images/l6.webp" alt="Company 6">
+                    </div>
+                    <div class="logo-item">
+                        <img src="/assets/images/l7.webp" alt="Company 7">
+                    </div>
+                    <div class="logo-item">
+                        <img src="/assets/images/l8.webp" alt="Company 8">
+                    </div>
+                </div>
+                <div class="logo-track">
+                    <div class="logo-item">
+                        <img src="/assets/images/l1.webp" alt="Sign Studio">
+                    </div>
+                    <div class="logo-item">
+                        <img src="/assets/images/l2.webp" alt="Salesurf">
+                    </div>
+                    <div class="logo-item">
+                        <img src="/assets/images/l3.webp" alt="SolvIT">
+                    </div>
+                    <div class="logo-item">
+                        <img src="/assets/images/l4.webp" alt="Ascension">
+                    </div>
+                    <div class="logo-item">
+                        <img src="/assets/images/l5.webp" alt="TikScale">
+                    </div>
+                    <div class="logo-item">
+                        <img src="/assets/images/l6.webp" alt="Company 6">
+                    </div>
+                    <div class="logo-item">
+                        <img src="/assets/images/l7.webp" alt="Company 7">
+                    </div>
+                    <div class="logo-item">
+                        <img src="/assets/images/l8.webp" alt="Company 8">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    </section>
+   <section> 
+   
+   <!-- Video Intro Section -->
+<section style="max-width: 1100px; margin: 0 auto 60px auto; text-align: center; padding-left:20px; padding-right:20px;" id="our-process">
+  
+  <h2 class="section-title" style="margin-top:80px;">
+    We Will Generate You B2B Sales Appointments On Autopilot
+  </h2>
+
+  <p class="section-subtitle">
+    We set up a cold email system, scrape the leads, write the emails, and book you calls with your dream prospects.
+  </p>
+
+  <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px;">
+   <script src="https://fast.wistia.com/player.js" async></script>
+<script src="https://fast.wistia.com/embed/aeo541mqiu.js"></script>
+
+<style>
+  wistia-player[media-id='aeo541mqiu']:not(:defined) {
+    background: center / contain no-repeat
+      url('https://fast.wistia.com/embed/medias/aeo541mqiu/swatch');
+    display: block;
+    filter: blur(5px);
+    padding-top: 56.25%;
+  }
+</style>
+
+<wistia-player
+  media-id="aeo541mqiu"
+  aspect="1.7777777777777777">
+</wistia-player>
+  </div>
+
+</section>
+
+
+
+<section class="title-image-desc-section">
+  <div class="title-image-desc-container">
+
+    <h2 style="color: #1e3a8a;">How Our Cold Email Infrastructure Works</h2>
+
+    <img src="/assets/images/infra.webp" alt="Cold Email Infrastructure">
+
+    <div class="title-image-desc-text">
+      <p>
+        With Google and Outlook cracking down on cold email sending, hitting the main inbox and avoiding spam filters is trickier than ever before.
+        When you use Google or Outlook to set up your domains — which 99% of cold email providers do — they are not on your side.
+      </p>
+
+      <p>
+        You need to “fly under the radar” with your cold email campaigns, otherwise your domains will get flagged and your emails will bounce or land in the spam folder.
+      </p>
+
+      <p>
+        Plus, there’s no cold email support from Google or Outlook, because once again — they don’t want you sending cold emails.
+      </p>
+
+      <p>
+        <strong>We are on your side.</strong> With our private cold email infrastructure, you’ll get hands-on support, troubleshooting assistance, and proactive monitoring to make sure your domains are running smoothly and you’re staying out of the spam folder.
+      </p>
+
+      <p>
+        Plus, our sending infrastructure is <strong>invite-only</strong>, only available to our DFY customers. You won’t be sharing IPs with the masses like you will on Google or Outlook — our IPs are pristine, warmed up for maximum inbox placement, and constantly monitored to ensure continued health.
+      </p>
+
+      <p>
+        If you’re not a technical person, let us put it in simple terms:
+        <strong>Google and Outlook are like a public golf course that doesn’t want you there — our private infrastructure is an exclusive, invite-only country club with the best customer service on the planet.</strong>
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="launchflow-wrap">
+  <div class="launchflow-container">
+
+    <!-- HEADER -->
+    <div class="launchflow-header">
+      <h2 class="launchflow-title" style="color: #1e3a8a;">
+        How Fast We Launch<br>Your Campaigns
+      </h2>
+
+      <div class="launchflow-intro">
+        <p class="launchflow-subtitle">
+          A step-by-step timeline to get you from setup to live outreach in just weeks.
+        </p>
+        <a href="#pricing" class="launchflow-btn">
+          See Pricing Plans
+        </a>
+      </div>
+    </div>
+
+    <!-- STEP 01 -->
+    <div class="launchflow-step">
+      <div class="launchflow-media">
+        <img src="/assets/images/cd1.webp" alt="Award Badge">
+      </div>
+
+      <div class="launchflow-content">
+        <span class="launchflow-index" style="margin-bottom:50px;">01</span>
+        <h3 class="launchflow-heading">
+          Week 1 – Write Your First Cold Email Script
+        </h3>
+        <ul class="launchflow-list">
+          <li>Domain and inbox setup</li>
+          <li>Script writing and approvals</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- STEP 02 -->
+    <div class="launchflow-step launchflow-flip">
+      <div class="launchflow-media">
+        <img src="/assets/images/cd2.webp" alt="Inbox UI">
+      </div>
+
+      <div class="launchflow-content">
+        <span class="launchflow-index" style="margin-bottom:50px;">02</span>
+        <h3 class="launchflow-heading">
+          Week 2 – Inbox Warmup & Deliverability Testing
+        </h3>
+        <ul class="launchflow-list">
+          <li>Inbox warmup</li>
+          <li>Deliverability checks</li>
+          <li>3-step email sequence crafted</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- STEP 03 -->
+    <div class="launchflow-step">
+      <div class="launchflow-media">
+        <img src="/assets/images/cd3.webp" alt="Campaign Builder">
+      </div>
+
+      <div class="launchflow-content">
+        <span class="launchflow-index" style="margin-bottom:50px;">03</span>
+        <h3 class="launchflow-heading">
+          Week 3 – First Campaign Launch & Initial Monitoring
+        </h3>
+        <ul class="launchflow-list">
+          <li>Start sending cold emails</li>
+          <li>Monitor early performance</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- STEP 04 -->
+    <div class="launchflow-step launchflow-flip">
+      <div class="launchflow-media">
+        <img src="/assets/images/cd4.webp" alt="Analytics Overview">
+      </div>
+
+      <div class="launchflow-content">
+        <span class="launchflow-index" style="margin-bottom:50px;">04</span>
+        <h3 class="launchflow-heading">
+          Continuous Optimization and Scaling Phase
+        </h3>
+        <ul class="launchflow-list">
+          <li>Testing new campaigns</li>
+          <li>Monthly reporting</li>
+          <li>Refined leads list building</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+    
+   </section>
+
+    <section id="features" class="container1" style="margin-left:20px; margin-right:20px;">
+        <h2 class="section-title">Everything You Need to Scale</h2>
+        <p class="section-subtitle">A comprehensive outreach solution designed to generate consistent, qualified leads for your business.</p>
+        
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon"><img src="/assets/images/ic1.png"></div>
+                <h3>Private Email Infrastructure</h3>
+                <p>Email inboxes on our private infrastructure with 24/7 AI deliverability monitoring for maximum inbox placement.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon"><img src="/assets/images/ic2.png"></div>
+                <h3>AI Lead Finder & Verification</h3>
+                <p>Access our AI-powered lead finder with built-in verification and personalization capabilities.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon"><img src="/assets/images/ic3.png"></div>
+                <h3>Cold Email Sending Tool</h3>
+                <p>Professional cold email platform designed for high-volume outreach with advanced features.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon"><img src="/assets/images/ic4.png"></div>
+                <h3>Response Enrichment</h3>
+                <p>Phone numbers for positive responses enriched monthly to help you close more deals.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon"><img src="/assets/images/ic5.png"></div>
+                <h3>Domain Setup & Management</h3>
+                <p>We guide you through domain purchasing from Spaceship and handle all technical setup.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon"><img src="/assets/images/ic6.png"></div>
+                <h3>Comprehensive Setup Process</h3>
+                <p>Complete plug-and-play setup including domain warming, inbox configuration, and campaign launch.</p>
+            </div>
+            <div class="feature-card">
+    <div class="feature-icon"><img src="/assets/images/ic7.png"></div>
+    <h3>Campaign Strategy & Copy Framework</h3>
+    <p>
+        Proven cold email frameworks tailored to your ICP, offer, and market. 
+        We structure campaigns for replies, not spam-folder vanity metrics.
+    </p>
+</div>
+
+<div class="feature-card">
+    <div class="feature-icon"><img src="/assets/images/ic9.png">️</div>
+    <h3>Deliverability Protection & Rotation</h3>
+    <p>
+        Automated inbox rotation, domain-level reputation tracking, 
+        and proactive issue prevention to keep campaigns running safely at scale.
+    </p>
+</div>
+
+        </div>
+    </section>
+
+
+<section class="testimonials" style="margin-top:100px;" id="case-studies">
+    <h2 class="section-title">Case Studies</h2>
+  <div class="testimonials-grid" style="margin-top:50px;">
+
+    <!-- TESTIMONIAL 1 -->
+    <div class="testimonial-card">
+      
+      
+      <script src="https://fast.wistia.com/player.js" async></script><script src="https://fast.wistia.com/embed/56zzwq7p3r.js" async type="module"></script><style>wistia-player[media-id='56zzwq7p3r']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/56zzwq7p3r/swatch'); display: block; filter: blur(5px); padding-top:56.25%; }</style> <wistia-player media-id="56zzwq7p3r" aspect="1.7777777777777777"></wistia-player>
+
+      <div class="testimonial-content">
+        <div class="profile">
+          <img src="/assets/images/cs4.webp">
+          <div>
+            <strong>Dylan Rich</strong>
+            <span>Founder, Automated Revenue</span>
+          </div>
+        </div>
+
+        <h3 class="testimonial-title">62 Meetings Within First 60 Days</h3>
+
+        <div class="box before">
+          <strong>Before Working With Grand IT:</strong>
+          When Dylan's team came to us, he was seeing poor results from his in-house cold email campaigns & wanted to add additional meetings to the calendar. 
+        </div>
+
+        <div class="box after">
+          <strong>After Working With Grand IT:</strong>
+          After partnering with us we developed a strategy based on their offer & target market, and leveraged our AI powered process to launch outbound campaigns for them. 
+        </div>
+      </div>
+    </div>
+
+    <!-- TESTIMONIAL 2 -->
+    <div class="testimonial-card">
+      <script src="https://fast.wistia.com/player.js" async></script><script src="https://fast.wistia.com/embed/wq6va93kej.js" async type="module"></script><style>wistia-player[media-id='wq6va93kej']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/wq6va93kej/swatch'); display: block; filter: blur(5px); padding-top:56.25%; }</style> <wistia-player media-id="wq6va93kej" aspect="1.7777777777777777"></wistia-player>
+
+      <div class="testimonial-content">
+        <div class="profile">
+          <img src="/assets/images/cs1.avif">
+          <div>
+            <strong>Ayman Arab</strong>
+            <span>Founder, TikScale</span>
+          </div>
+        </div>
+
+        <h3 class="testimonial-title">10 Meetings & Closed Deal in 10 Days</h3>
+
+        <div class="box before">
+          <strong>Before Working With Grand IT:</strong>
+          When we were approached by their team, they were looking for new ways to consistently add meetings meetings to their calendar without having to invest more time.
+        </div>
+
+        <div class="box after">
+          <strong>After Working With Grand IT:</strong>
+          We strategized & identified a couple key niche audiences that we found highly resonated with his service and we were able to get a closed deal within a 10 day period of working together.
+        </div>
+      </div>
+    </div>
+
+    <!-- TESTIMONIAL 3 -->
+    <div class="testimonial-card">
+      <script src="https://fast.wistia.com/player.js" async></script><script src="https://fast.wistia.com/embed/dilrsph36q.js" async type="module"></script><style>wistia-player[media-id='dilrsph36q']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/dilrsph36q/swatch'); display: block; filter: blur(5px); padding-top:56.25%; }</style> <wistia-player media-id="dilrsph36q" aspect="1.7777777777777777"></wistia-player>
+
+      <div class="testimonial-content">
+        <div class="profile">
+          <img src="/assets/images/cs5.avif">
+          <div>
+            <strong>Alex Tenorio</strong>
+            <span>Co-Founder, STAXX</span>
+          </div>
+        </div>
+
+        <h3 class="testimonial-title">37 Qualified Meetings Booked</h3>
+
+        <div class="box before">
+          <strong>Before Working With Grand IT:</strong>
+When they approached us, they had a broad idea of how cold email worked but hadn't executed an outbound email campaign that was successful.
+        </div>
+
+        <div class="box after">
+          <strong>After Working With Grand IT:</strong>
+          Within the first month of working together, we were able to find an angle that resonated with their target market & was immediately booking meetings. We secured them 37 meeting within a few months.
+        </div>
+      </div>
+    </div>
+
+    <!-- TESTIMONIAL 4 -->
+    <div class="testimonial-card">
+      <script src="https://fast.wistia.com/player.js" async></script><script src="https://fast.wistia.com/embed/lkpbioswbz.js" async type="module"></script><style>wistia-player[media-id='lkpbioswbz']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/lkpbioswbz/swatch'); display: block; filter: blur(5px); padding-top:56.25%; }</style> <wistia-player media-id="lkpbioswbz" aspect="1.7777777777777777"></wistia-player>
+
+      <div class="testimonial-content">
+        <div class="profile">
+          <img src="/assets/images/cs3.avif">
+          <div>
+            <strong>Anthony Marsilio</strong>
+            <span>Founder, Salesurf Growth</span>
+          </div>
+        </div>
+
+        <h3 class="testimonial-title">50+ Meetings Booked, 5+ Deals Closed</h3>
+
+        <div class="box before">
+          <strong>Before Working With Grand IT:</strong>
+          When Anthony approached us, he had tried running a cold outreach system in-house and was getting overwhelmed with the time committment and lack of results.
+        </div>
+
+        <div class="box after">
+          <strong>After Working With Grand IT:</strong>
+          After working with our team, we were immediately able to find a campaign that was successful. Within a matter of a few months, we were able to set 50+ meetings for Anthony's team which led to multiple 5 figure deals being closed.
+        </div>
+      </div>
+    </div>
+
+    <!-- TESTIMONIAL 5 -->
+    <div class="testimonial-card">
+      <script src="https://fast.wistia.com/player.js" async></script><script src="https://fast.wistia.com/embed/ttgzk5fkgm.js" async type="module"></script><style>wistia-player[media-id='ttgzk5fkgm']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/ttgzk5fkgm/swatch'); display: block; filter: blur(5px); padding-top:56.25%; }</style> <wistia-player media-id="ttgzk5fkgm" aspect="1.7777777777777777"></wistia-player>
+
+      <div class="testimonial-content">
+        <div class="profile">
+          <img src="/assets/images/cs6.avif">
+          <div>
+            <strong>Scott Davis</strong>
+            <span>Founder, Outreacher</span>
+          </div>
+        </div>
+
+        <h3 class="testimonial-title">20+ Meetings & $12,000 of Monthly Recurring Contracts Closed in 60 Days</h3>
+
+        <div class="box before">
+          <strong>Before Working With Grand IT:</strong>
+          When Scott approached us, he had tried running a cold outreach system in-house and was frustrated with the lack of results.
+        </div>
+
+        <div class="box after">
+          <strong>After Working With Grand IT:</strong>
+          After working with our team, we were able to pin point the most effective market segments that led to us booking 20+ meetings which led to $12,000 in added monthly recurring revenue.
+        </div>
+      </div>
+    </div>
+
+    <!-- TESTIMONIAL 6 -->
+    <div class="testimonial-card">
+      <script src="https://fast.wistia.com/player.js" async></script><script src="https://fast.wistia.com/embed/6d6gi0uids.js" async type="module"></script><style>wistia-player[media-id='6d6gi0uids']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/6d6gi0uids/swatch'); display: block; filter: blur(5px); padding-top:56.25%; }</style> <wistia-player media-id="6d6gi0uids" aspect="1.7777777777777777"></wistia-player>
+
+      <div class="testimonial-content">
+        <div class="profile">
+          <img src="/assets/images/cs2.jpg">
+          <div>
+            <strong>Jeffrey Park</strong>
+            <span>Founder, Daydreamers Design</span>
+          </div>
+        </div>
+
+        <h3 class="testimonial-title">36 Qualified Meetings Booked</h3>
+
+        <div class="box before">
+          <strong>Before Working With Grand IT:</strong>
+          When they approached us, they had attempted cold email campaigns in the past with little success. 
+        </div>
+
+        <div class="box after">
+          <strong>After Working With Grand IT:</strong>
+          After partnering with our team, we were able to take over their existing infrastructure, add more sending power, and refine their strategy. This led to an over 500% increase in results than what they were previously getting and they no longer had to manage the system in house.
+        </div>
+      </div>
+    </div>
+    
+    
+        <!-- TESTIMONIAL 7 -->
+    <div class="testimonial-card">
+      <script src="https://fast.wistia.com/player.js" async></script><script src="https://fast.wistia.com/embed/dbv3p1w2v0.js" async type="module"></script><style>wistia-player[media-id='dbv3p1w2v0']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/dbv3p1w2v0/swatch'); display: block; filter: blur(5px); padding-top:56.25%; }</style> <wistia-player media-id="dbv3p1w2v0" aspect="1.7777777777777777"></wistia-player>
+
+      <div class="testimonial-content">
+        <div class="profile">
+          <img src="/assets/images/cs19.avif">
+          <div>
+            <strong>Connor Skelly</strong>
+            <span>Founder, Fission</span>
+          </div>
+        </div>
+
+        <h3 class="testimonial-title">26 Meetings & $30,000+ Closed in 60 Days</h3>
+
+        <div class="box before">
+          <strong>Before Working With Grand IT:</strong>
+          When Connor and his team came to us, he was struggling to fill his calendar which was preventing his business from scaling.
+        </div>
+
+        <div class="box after">
+          <strong>After Working With Grand IT:</strong>
+          We worked with Connor and his team to hyper target a specific segment of the market, and setup a cold outbound campaign completely on his behalf. In the first 60 days of working together, we booked 20+ meetings which led to immediate deals that resulted in $30,000+ in revenue.
+        </div>
+      </div>
+    </div>
+
+    <!-- TESTIMONIAL 8 -->
+    <div class="testimonial-card">
+      <script src="https://fast.wistia.com/player.js" async></script><script src="https://fast.wistia.com/embed/sg1168f1pn.js" async type="module"></script><style>wistia-player[media-id='sg1168f1pn']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/sg1168f1pn/swatch'); display: block; filter: blur(5px); padding-top:56.25%; }</style> <wistia-player media-id="sg1168f1pn" aspect="1.7777777777777777"></wistia-player>
+
+      <div class="testimonial-content">
+        <div class="profile">
+          <img src="/assets/images/cs20.jpeg">
+          <div>
+            <strong>Brad Nelson</strong>
+            <span>Owner, Nelson CPAs</span>
+          </div>
+        </div>
+
+        <h3 class="testimonial-title">Closed 4 High-Value Deals in 30 Days</h3>
+
+        <div class="box before">
+          <strong>Before Working With Grand IT:</strong>
+          They were relying on inconsistent outreach efforts that produced very few replies. Campaigns lacked structure, deliverability was unstable, and results were unpredictable.
+        </div>
+
+        <div class="box after">
+          <strong>After Working With Grand IT:</strong>
+          We rebuilt and scaled their outbound system end-to-end—improving deliverability, increasing sending capacity, and tightening targeting. The result was a predictable flow of qualified conversations, delivering over 5× more results without any internal workload.
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<section class="pain-section">
+  <div class="pain-container">
+
+    <h2 class="pain-title" style="color: #1e3a8a;">
+      Is your business currently facing these issues?
+    </h2>
+
+    <div class="pain-grid">
+
+      <div class="pain-card">
+        <span class="pain-pill">Revenue Targets</span>
+        <div class="pain-text">
+          Are you feeling uncertain you won't be able to hit revenue targets?
+        </div>
+      </div>
+
+      <div class="pain-card">
+        <span class="pain-pill">Lack of Growth</span>
+        <div class="pain-text">
+          Frustrated that your business isn't growing as fast as you want?
+        </div>
+      </div>
+
+      <div class="pain-card">
+        <span class="pain-pill">Lack of Time</span>
+        <div class="pain-text">
+          Do you not have the time and energy to spend on endless prospecting?
+        </div>
+      </div>
+
+      <div class="pain-card">
+        <span class="pain-pill">Burned by Agencies</span>
+        <div class="pain-text">
+          Have you worked with lead gen agencies who over-promise but under-deliver?
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="hero-section">
+        <div class="tagline">
+            That's why we're here to help
+        </div>
+        
+        <h1 class="main-heading" style="color:white;">
+            We make sure your calendar is filled with sales meetings with prospects you want to work with
+        </h1>
+        
+        <p class="subheading" style="color:white;">
+            We take all the headaches and hassle of prospecting out of your hands so you can focus on closing the leads we send you every week.
+        </p>
+        
+        <button class="cta-button" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/sk-inzamam/15min'});return false;">
+            Book a Call
+        </button>
+        
+        <div class="feature-box">
+            <h2 class="feature-heading" style="color:white;">
+                And the best part is - we do it all for you
+            </h2>
+            
+            <div class="feature-subtagline">
+                What does that mean for you?
+            </div>
+            
+            <div class="feature-description-box">
+                You don't have to learn cold email tech, buy any lead scraping software, or hire anyone on your team to manage the system. Simply give us your calendar & we book meetings for you.
+            </div>
+        </div>
+    </section>
+
+
+<div class="container" style="margin-top:80px; margin-bottom:80px;">
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <h2 class="testimonial-title">Solved My ENTIRE Outbound Lead Gen Struggles!</h2>
+                
+                <div class="testimonial-content">
+                    <div class="testimonial-subtitle">8 Qualified Calls in One Week</div>
+                    <p class="testimonial-text">
+                        Grand IT basically fixed the lead generation issues I've been facing for my business. For 6+ months I've been struggling to book meetings and sign clients through cold email. Ever since working with Inzamam and Grand IT I've been consistently booking calls with qualified leads that I would never have been able to before. Just last week he scheduled 8 calls for me with QUALIFIED prospects. If you're considering hiring them for your outbound systems you'd be doing yourself a favor. Book a call with Inzamam and his team and just watch your calendars get filled
+                    </p>
+                </div>
+                
+                <!--<div class="profile">
+                    <div class="profile-image green">JP</div>
+                    <div class="profile-info">
+                        <div class="profile-name">Jeffery Park</div>
+                        <div class="profile-title">Founder at DayDreamersStudio</div>
+                    </div>
+                </div>-->
+                <div class="profile">
+          <img src="/assets/images/cs2.jpg">
+          <div>
+            <strong>Jeffrey Park</strong>
+            <span>Founder, Daydreamers Design</span>
+          </div>
+        </div>
+            </div>
+            
+            <div class="testimonial-card">
+                <h2 class="testimonial-title">Booked 4 meetings for me in a day, closed one</h2>
+                
+                <div class="testimonial-content">
+                    <div class="testimonial-subtitle">constantly books me multiple meetings per DAY</div>
+                    <p class="testimonial-text">
+                        Grand IT has the best customer experience I've ever seen, AND they actually get results. I run a youtube agency called TikScale, and Grand IT constantly books me multiple meetings per DAY. Yesterday, they booked 4 sales calls, and I closed one. This isn't a rare occurrence. These leads are extremely qualified, and all I have to do is close the prospects on call.
+                    </p>
+                </div>
+                
+                <!--<div class="profile">
+                    <div class="profile-image pink">AA</div>
+                    <div class="profile-info">
+                        <div class="profile-name">Ayman Arab</div>
+                        <div class="profile-title">Founder at Tikscale</div>
+                    </div>
+                </div>-->
+                <div class="profile">
+          <img src="/assets/images/cs1.avif">
+          <div>
+            <strong>Ayman Arab</strong>
+            <span>Founder, TikScale</span>
+          </div>
+        </div>
+                
+            </div>
+        </div>
+        
+        <div class="feature-card">
+            <h2 class="feature-heading">Grand IT = Our Go to B2B Lead Gen Company</h2>
+            
+            <div class="feature-content">
+                <div class="feature-subtitle">Best Lead generation company we've ever worked with</div>
+                <p class="feature-text">
+                    Grand IT is the best cold email lead generation company we've ever worked with. Their team is extremely responsive, and is genuinely one of the smartest cold email guys we've met. Highly recommend for any B2B businesses looking to add more calls to their calendars!!
+                </p>
+            </div>
+            
+            <!--<div class="profile">
+                <div class="profile-image blue">A</div>
+                <div class="profile-info">
+                    <div class="profile-name">Anthony</div>
+                    <div class="profile-title">Founder at SalesSurf</div>
+                </div>
+            </div>-->
+            <div class="profile">
+          <img src="/assets/images/cs3.avif">
+          <div>
+            <strong>Anthony Marsilio</strong>
+            <span>Founder, Salesurf Growth</span>
+          </div>
+        </div>
+        </div>
+    </div>
+
+    
+<section class="expect-section">
+  <div class="expect-grid">
+
+    <!-- LEFT BLUE CARD -->
+    <div class="expect-left">
+      <h2 style="color:white;">Everything you get from<br>working with us</h2>
+
+      <div class="feature-grid">
+        <div class="feature">
+          <span class="check">✓</span>
+          <p style="color:white;">Service Audit & Business<br>Deep Dive</p>
+        </div>
+
+        <div class="feature">
+          <span class="check">✓</span>
+          <p style="color:white;">DFY Outbound Infrastructure<br>Creation & Maintenance</p>
+        </div>
+
+        <div class="feature">
+          <span class="check">✓</span>
+          <p style="color:white;">DFY Email Copywriting</p>
+        </div>
+
+        <div class="feature">
+          <span class="check">✓</span>
+          <p style="color:white;">DFY Lead Scraping</p>
+        </div>
+
+        <div class="feature">
+          <span class="check">✓</span>
+          <p style="color:white;">DFY Response Management &<br>Booking</p>
+        </div>
+
+        <div class="feature">
+          <span class="check">✓</span>
+          <p style="color:white;">Weekly Performance<br>Reporting</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT WHITE CARD -->
+    <div class="expect-right">
+      <h3>What else can you expect from us?</h3>
+
+      <div class="expect-box">
+        <h4>Qualified meetings on autopilot</h4>
+        <p>
+          You don’t have to do any work. We handle all your outbound and you get
+          meetings on their calendar.
+        </p>
+      </div>
+
+      <div class="expect-box">
+        <h4>Proven skillsets</h4>
+        <p>
+          No need to screen, make job posts, onboard, and train sales talent
+          with no guarantee that they will perform. You get a team of experts
+          from day 1.
+        </p>
+      </div>
+
+      <div class="expect-box">
+        <h4>Consistent lead flow</h4>
+        <p>
+          No more hitting up old clients and contacts asking for referrals. You
+          can reliably expect qualified meetings on your calendar every week.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section class="how-it-works" id="how">
+  <div class="how-container">
+
+    <span class="how-pill">So how does everything work?</span>
+
+    <h2 class="how-title" style="color: #1e3a8a;">
+      This is how we make sure we<br>
+      only book you calls with<br>
+      qualified prospects
+    </h2>
+
+    <!-- STEP 1 -->
+    <div class="how-step">
+      <div class="icon"><img src="/assets/images/ic14.png"></div>
+
+      <h3>First, we do a deep dive into your business</h3>
+      <p>
+        We’ll do a deep dive to understand your business as well if we were part
+        of your in-house team. We’ll collect data on your Offers, ICP, and learn
+        more about your business to build scripts, lead lists, and sending
+        infrastructure completely DFY.
+      </p>
+
+      <div class="deliverables">
+        <strong>Deliverables</strong>
+        <ul>
+          <li>Email Scripts</li>
+          <li>Lead Lists</li>
+          <li>Sending Infrastructure</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- STEP 2 -->
+    <div class="how-step">
+      <div class="icon"><img src="/assets/images/ic11.png"></div>
+
+      <h3>Then we launch your campaign</h3>
+      <p>
+        After we create all your assets & get them approved, we launch the
+        campaign and start sending tailored emails out to your ideal audience.
+        We split test different copy & audiences to make sure we get the best
+        results and maximize quality leads.
+      </p>
+
+      <div class="deliverables">
+        <strong>Deliverables</strong>
+        <ul>
+          <li>Sales Asset Creation</li>
+          <li>Cold Outreach Campaign</li>
+          <li>Email Script Testing and Optimization</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- STEP 3 -->
+    <div class="how-step">
+      <div class="icon"><img src="/assets/images/ic12.png"></div>
+
+      <h3>Finally, you get sales meetings on auto-pilot</h3>
+      <p>
+        After the campaigns are launched, we follow up and nurture all the
+        replies to get the interested prospects booked on your calendar. We
+        handle everything end to end, and you get the meetings booked on your
+        calendar without having to lift a finger.
+      </p>
+
+      <div class="deliverables">
+        <strong>Deliverables</strong>
+        <ul>
+          <li>Response Management</li>
+          <li>Sales Meetings</li>
+          <li>Weekly Reports</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<section class="comparison-section">
+  <div class="comparison-header">
+    <div class="header-left">
+      <h2 style="color: #1e3a8a;">
+        What You Handle <br />
+        vs What We Handle
+      </h2>
+    </div>
+
+    <div class="header-right">
+      <p>
+        A clear split so your team stays focused<br />
+        and we handle the heavy lifting.
+      </p>
+      <a href="#pricing" class="btn-primary">See Pricing Plans</a>
+    </div>
+  </div>
+
+  <div class="comparison-grid">
+    <!-- Grand IT -->
+    <div class="comparison-card">
+      <div class="card-header">
+        <img
+          src="/assets/images/log.png"
+          alt="Grand IT"
+          class="brand-logo"
+        />
+      </div>
+
+      <div class="card-body">
+        <div class="pill">Setup custom cold email inboxes and domains</div>
+        <div class="pill">Creating New, Targeted Leads List Monthly</div>
+        <div class="pill">Write & Optimize New Campaigns Monthly</div>
+        <div class="pill">Manage Deliverability & Performance</div>
+      </div>
+    </div>
+
+    <!-- Your Team -->
+    <div class="comparison-card">
+      <div class="card-header muted">Your Team</div>
+
+      <div class="card-body">
+        <div class="pill blue">Approve Messaging and Strategy</div>
+        <div class="pill blue">Focus on High-Value Outreach Decisions</div>
+        <div class="pill blue">Takes Sales Calls</div>
+        <div class="pill green">Sign Clients</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <section id="pricing" class="pricing">
+        <h2 class="section-title">Transparent Pricing</h2>
+        <p class="section-subtitle">Choose the plan that fits your outreach volume. All plans include our complete infrastructure and tools.</p>
+        
+        <div class="setup-cost">
+            <h3 style="color:white; margin-bottom:50px;">One-Time Setup Cost</h3>
+            <div class="price" style="color:white; margin-top:50px; margin-bottom:50px;">$1,500</div>
+            <p style="color:white; margin-top:50px;">Complete "Plug-And-Play" setup process for all plans</p>
+        </div>
+
+   <div style="text-align:center;">
+        <div class="billing-toggle">
+            <button class="toggle-btn active" data-period="quarterly">Quarterly</button>
+            <button class="toggle-btn" data-period="yearly">Yearly <span>(Save 15%)</span></button>
+        </div>
+    </div>
+
+
+
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <div class="plan-name">Base Plan</div>
+                </div>
+                <div class="pricing-body"
+     data-leads-q="15000"
+     data-leads-y="60000"
+     data-send-q="45000"
+     data-send-y="180000"
+     data-service-q="2500"
+     data-service-y="8500">
+
+    <!-- Domains (STATIC) -->
+    <div class="pricing-row">
+        <div class="pricing-label">Domains</div>
+        <div class="pricing-value">15 domains from Spaceship</div>
+        <div style="font-size: 0.9rem; color: #6b7280;">$150/yr purchased by you</div>
+    </div>
+
+    <!-- Leads -->
+    <div class="pricing-row">
+        <div class="pricing-label leads-label">Leads Contacted</div>
+        <div class="pricing-value highlight leads-value">
+            15,000 / quarter
+        </div>
+    </div>
+
+    <!-- Sending -->
+    <div class="pricing-row">
+        <div class="pricing-label send-label">Sending Volume</div>
+        <div class="pricing-value highlight send-value">
+            45,000 messages / quarter
+        </div>
+    </div>
+
+    <!-- Included -->
+    <div class="included-features">
+        <h4>What's Included</h4>
+        <ul>
+                            <li>30 email inboxes on private infrastructure</li>
+                            <li>24/7 AI deliverability monitoring</li>
+                            <li>Access to cold email sending tool</li>
+                            <li>Phone numbers for positive responses enriched monthly</li>
+                            <li>Access to AI lead finder, verification, & personalizations</li>
+                        </ul>
+    </div>
+
+    <!-- Cost Breakdown -->
+    <div class="cost-breakdown">
+        <h4 class="first-label">First Quarter Cost</h4>
+
+        <div class="cost-item">
+            <span>Setup Cost</span>
+            <span>$1,500</span>
+        </div>
+
+        <div class="cost-item">
+            <span class="service-label">Quarterly Service</span>
+            <span class="service-value">$2,500</span>
+        </div>
+
+        <div class="cost-item total">
+            <span class="total-label">Total First Quarter</span>
+            <span class="total-value">$4,000</span>
+            
+        </div>
+    </div>
+
+    <!-- Recurring -->
+    <div class="recurring-cost">
+        <h4 class="recurring-label">Starting Second Quarter</h4>
+        <div class="price recurring-price">$2,500 <small>/quarter</small></div>
+        <p class="recurring-note">($833/mo billed quarterly)</p>
+          <p class="rla" style="font-size: 0.85rem; margin-top: 0.75rem;">3.5 months after sign up to account for warm up</p>
+    </div>
+
+    <a href="https://tally.so/r/44KOdd" class="plan-button">Start With Base</a>
+</div>
+
+            </div>
+
+            <div class="pricing-card featured">
+                <div class="pricing-header">
+                    <div class="badger">MOST POPULAR</div>
+                    <div class="plan-name">Gold Plan</div>
+                </div>
+                <div class="pricing-body"
+     data-leads-q="30000"
+     data-leads-y="120000"
+     data-send-q="90000"
+     data-send-y="360000"
+     data-service-q="3500"
+     data-service-y="11900">
+
+    <!-- Domains -->
+    <div class="pricing-row">
+        <div class="pricing-label">Domains</div>
+        <div class="pricing-value">30 domains from Spaceship</div>
+        <div style="font-size: 0.9rem; color: #6b7280;">$300/yr purchased by you</div>
+    </div>
+
+    <!-- Leads -->
+    <div class="pricing-row">
+        <div class="pricing-label">Leads Contacted</div>
+        <div class="pricing-value highlight leads-value">
+            30,000 / quarter
+        </div>
+    </div>
+
+    <!-- Sending -->
+    <div class="pricing-row">
+        <div class="pricing-label">Sending Volume</div>
+        <div class="pricing-value highlight send-value">
+            90,000 messages / quarter
+        </div>
+    </div>
+
+    <!-- Included -->
+    <div class="included-features">
+        <h4>What's Included</h4>
+        <ul>
+                            <li>60 email inboxes on private infrastructure</li>
+                            <li>24/7 AI deliverability monitoring</li>
+                            <li>Access to cold email sending tool</li>
+                            <li>Phone numbers for positive responses enriched monthly</li>
+                            <li>Access to AI lead finder, verification, & personalizations</li>
+                        </ul>
+    </div>
+
+    <!-- Cost Breakdown -->
+    <div class="cost-breakdown">
+        <h4 class="first-label">First Quarter Cost</h4>
+
+        <div class="cost-item">
+            <span>Setup Cost</span>
+            <span>$1,500</span>
+        </div>
+
+        <div class="cost-item">
+            <span class="service-label">Quarterly Service</span>
+            <span class="service-value">$3,500</span>
+        </div>
+
+        <div class="cost-item total">
+            <span class="total-label">Total First Quarter</span>
+            <span class="total-value">$5,000</span>
+        </div>
+    </div>
+
+    <!-- Recurring -->
+    <div class="recurring-cost">
+        <h4 class="recurring-label">Starting Second Quarter</h4>
+        <div class="price recurring-price">$3,500 <small>/quarter</small></div>
+        <p class="recurring-note">($1,167/mo billed quarterly)</p>
+        <p class="rla" style="font-size:0.85rem; margin-top:0.75rem;">
+            3.5 months after sign up to account for warm up
+        </p>
+    </div>
+
+    <a href="https://tally.so/r/44KOdd" class="plan-button">Start With Gold</a>
+</div>
+
+            </div>
+
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <div class="plan-name">Platinum Plan</div>
+                </div>
+                <div class="pricing-body"
+     data-leads-q="45000"
+     data-leads-y="180000"
+     data-send-q="135000"
+     data-send-y="540000"
+     data-service-q="4800"
+     data-service-y="16300">
+
+    <!-- Domains -->
+    <div class="pricing-row">
+        <div class="pricing-label">Domains</div>
+        <div class="pricing-value">45 domains from Spaceship</div>
+        <div style="font-size: 0.9rem; color: #6b7280;">$450/yr purchased by you</div>
+    </div>
+
+    <!-- Leads -->
+    <div class="pricing-row">
+        <div class="pricing-label">Leads Contacted</div>
+        <div class="pricing-value highlight leads-value">
+            45,000 / quarter
+        </div>
+    </div>
+
+    <!-- Sending -->
+    <div class="pricing-row">
+        <div class="pricing-label">Sending Volume</div>
+        <div class="pricing-value highlight send-value">
+            135,000 messages / quarter
+        </div>
+    </div>
+
+    <!-- Included -->
+    <div class="included-features">
+        <h4>What's Included</h4>
+        <ul>
+                            <li>90 email inboxes on private infrastructure</li>
+                            <li>24/7 AI deliverability monitoring</li>
+                            <li>Access to cold email sending tool</li>
+                            <li>Phone numbers for positive responses enriched monthly</li>
+                            <li>Access to AI lead finder, verification, & personalizations</li>
+                        </ul>
+    </div>
+
+    <!-- Cost Breakdown -->
+    <div class="cost-breakdown">
+        <h4 class="first-label">First Quarter Cost</h4>
+
+        <div class="cost-item">
+            <span>Setup Cost</span>
+            <span>$1,500</span>
+        </div>
+
+        <div class="cost-item">
+            <span class="service-label">Quarterly Service</span>
+            <span class="service-value">$4,800</span>
+        </div>
+
+        <div class="cost-item total">
+            <span class="total-label">Total First Quarter</span>
+            <span class="total-value">$6,300</span>
+        </div>
+    </div>
+
+    <!-- Recurring -->
+    <div class="recurring-cost">
+        <h4 class="recurring-label">Starting Second Quarter</h4>
+        <div class="price recurring-price">$4,800 <small>/quarter</small></div>
+        <p class="recurring-note">($1,600/mo billed quarterly)</p>
+        <p class="rla" style="font-size:0.85rem; margin-top:0.75rem;">
+            3.5 months after sign up to account for warm up
+        </p>
+    </div>
+
+    <a href="https://tally.so/r/44KOdd" class="plan-button">Start With Platinum</a>
+</div>
+
+            </div>
+        </div>
+    </section>
+
+
+<section class="case-studies">
+  <div class="case-grid">
+
+    <!-- LEFT CARD -->
+    <div class="case-card">
+      <img class="testimonial-img" src="/assets/images/ts1.png" alt="Email testimonial" style="margin-bottom:200px;">
+
+      <img class="logo" src="/assets/images/css1.webp" alt="SolvIT Logo">
+
+      <h2>75+ Qualified Meetings Scheduled,<br>Multiple Deals Closed</h2>
+
+      <div class="info-card">
+        <h4>Before Working With Grand IT:</h4>
+        <p>
+          SolvIT is an IT consulting company that helps companies deliver best-in-class IT solutions.
+          SolvIT came to us looking to have sales prospecting & marketing done on their behalf,
+          so their team could focus more on closing deals.
+        </p>
+      </div>
+
+      <div class="info-card highlight">
+        <h4>After Working With Grand IT:</h4>
+        <p>
+          After partnering with our team, we were able to consistently generate meetings on their
+          calendar every month which led to 75 meetings scheduled in their target market.
+        </p>
+      </div>
+    </div>
+
+    <!-- RIGHT CARD -->
+    <div class="case-card">
+      <img class="testimonial-img" src="/assets/images/ts2.png" alt="LinkedIn testimonial">
+
+      <img class="logo" src="/assets/images/css2.avif" alt="SolvIT Logo">
+
+      <h2>8x Return On Investment</h2>
+
+      <div class="info-card">
+        <h4>Before Working With Grand IT:</h4>
+        <p>
+          Blue Light Media is a creative and digital marketing agency that specializes in E-commerce
+          & CPG brands. When they approached us, they were looking for ways to fill their calendar
+          with more meetings without having to overpay for an internal rep.
+        </p>
+      </div>
+
+      <div class="info-card highlight">
+        <h4>After Working With Grand IT:</h4>
+        <p>
+          After partnering, we fully built out an outbound campaign strategy & sent it over to them
+          for a final approval. Within the first 3 weeks we booked them 7 sales qualified, then went
+          on to book over 20 meetings & secure them multiple deals which led to an 8x ROI on what
+          they spent with us.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+    <section id="process" class="process">
+        <div class="container1">
+            <h2 class="section-title">How It Works</h2>
+            <p class="section-subtitle">From onboarding to generating qualified meetings, we handle the entire process.</p>
+            
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3>Discovery & Setup</h3>
+                    <p>We guide you through domain purchasing and complete the entire technical setup process.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h3>Infrastructure & Warming</h3>
+                    <p>Your email inboxes are configured on our private infrastructure and warmed for optimal deliverability.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3>Campaign Launch</h3>
+                    <p>After 14 days of warming, your campaigns begin reaching qualified prospects at scale.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h3>Ongoing Optimization</h3>
+                    <p>AI monitoring ensures peak performance while we enrich positive responses with contact data.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    
+    <section class="faq-section">
+  <div class="faq-container">
+    
+    <!-- Left column -->
+    <div class="faq-left">
+      <h2 style="color: #1e3a8a;">Have Questions?<br />We Have Answers</h2>
+      <p>
+        Still stuck? Contact us at
+        <a href="#">info@grandit.us</a>
+        to message our team. Average response time is under 2 hours.
+      </p>
+    </div>
+
+    <!-- Right column -->
+    <div class="faq-right">
+
+      <details class="faq-card">
+        <summary>Can I Connect This to my CRM?</summary>
+        <p>
+          Yes! Although we do not have a direct integration with most CRMs,
+          we do have an integration with Zapier which allows us to push
+          positive replies and more into CRMs like HubSpot, Pipedrive,
+          Salesforce, etc. This is also something our team is willing to
+          assist with in the onboarding process!
+        </p>
+      </details>
+
+      <details class="faq-card">
+        <summary>Why do I Need a Cold Email Infrastructure like This?</summary>
+        <p>
+          A cold email infrastructure is necessary because it follows lead
+          generation best practices (high volume, high deliverability,
+          targeted messaging) while remaining compliant. Tools like Gmail,
+          HubSpot, or similar platforms are not built for cold outreach and
+          may put your main domain at risk.
+        </p>
+      </details>
+
+      <details class="faq-card">
+        <summary>How Long Does the Setup Take?</summary>
+        <p>
+          On average, setup takes around two weeks from signup to launch.
+          Timing depends on onboarding speed and responsiveness.
+        </p>
+      </details>
+
+      <details class="faq-card">
+        <summary>Will Cold Email Work for me?</summary>
+        <p>
+          As long as your target market checks their email, cold email can
+          work — especially at scale. Our team has worked with 1000+ B2B
+          companies and has seen success across many industries.
+        </p>
+      </details>
+
+      <details class="faq-card">
+        <summary>Why do I Need to Purchase Domains?</summary>
+        <p>
+          Purchasing separate domains protects your main domain from risk.
+          We recommend sending small volumes from each domain to maintain
+          deliverability and quickly replace any domain if needed. This
+          significantly minimizes risk.
+        </p>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<section class="cta-wrap">
+  <div class="cta-box">
+
+    <h2 style="color:white;">Are you ready to shatter your lead flow<br>bottleneck?</h2>
+
+    <button onclick="Calendly.initPopupWidget({url: 'https://calendly.com/sk-inzamam/15min'});return false;" class="cta-button">Book a Call</button>
+
+    <div class="cta-sub">
+      What can you expect from our call?
+    </div>
+
+    <div class="cta-points">
+      <div class="cta-chip">
+        <span class="check">✓</span>
+        <span>We will audit your current outbound marketing</span>
+      </div>
+
+      <div class="cta-chip">
+        <span class="check">✓</span>
+        <span>After the audit, we’ll come up with a strategy</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  
+
+     <footer class="bg-dark text-light">
+        <div class="container">
+            <div class="f-items">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 item">
+                        <div class="f-item about">
+                            
+                            <img src="/assets/images/Grand%20IT-5.png" class="log" alt="Logo">
+                            <p>If you have the Commitment & Desire to develop your business we have the experience and expertise to make it success!</p>
+                            <div class="footer-icons">
+                                <a href="https://www.facebook.com/profile.php?id=61578744989471"><i class="fab fa-facebook"></i></a>
+                                <a href="https://www.instagram.com/grandit.us/"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.linkedin.com/company/granditus"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://x.com/granditbd"><i class="fab fa-twitter"></i></a>
+                            </div>
+                            <br>
+                             <p><a href="https://www.grandit.us/assets/grandit_pitchdeck.pdf"
+   download="GrandIT-Pitch-Deck.pdf"
+   aria-label="Download Company Pitch Deck (PDF)">
+  <!-- simple download SVG icon -->
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+    <path d="M12 3v10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M8 11l4 4 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M21 21H3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+  Download Company Deck
+</a></p>
+                        </div>
+                    </div>
+                        <div class="col-lg-4 col-md-6 item triggers">
+                            <div class="hide-mobile">
+                                <div class="f-item link">
+                                    <h4 class="widget-title">Trigger Links</h4>
+                                    <ul class="trig-link">
+                                        <li>
+                                            <a href="career.html">Career</a>
+                                        </li>
+                                        <li>
+                                            <a href="team.html">Team</a>
+                                        </li>
+                                        <li>
+                                            <a href="gallery.html">Gallery</a>
+                                        </li>
+                                        <li>
+                                            <a href="press.html">Press & Media</a>
+                                        </li>
+                                        <li>
+                                            <a href="privacy-policy.html">Privacy Policy</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 item">
+                            <div class="hide-mobile">
+                                <div class="f-item">
+                                    <h4 class="widget-title">Contact Info</h4>
+                                    <div class="address">
+                                        <ul>
+                                            <li>
+                                                <strong> <i class="fas fa-map-marker-alt"></i> Headquarter:</strong>
+                                                650 Castro St suite 121-285, Mountain View, CA 94041, United States.
+                                            </li>
+                                            <li><a href="#" class="view-locations" style="text-decoration:underline;">
+    <i class="fas fa-map-marked-alt"></i>View All Locations
+</a></li>
+                                            <li>
+                                                <strong><i class="fa fa-phone" style="transform: rotate(90deg);"></i> +1 (669) 306-7781</strong>
+                                            </li>
+                                            <li>
+                                                <strong><i class="fas fa-envelope"></i> <a href="mailto:info@grandit.us">info@grandit.us</a></strong>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="show-mobile">
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="first">
+                                <label class="first" for="first"><h4 class="widget-title">Trigger Links</h4></label>
+                                <div class="content">
+                                        <p><a href="career.html">Career</a></p>
+                                        <p><a href="team.html">Team</a></p>
+                                        <p><a href="gallery.html">Gallery</a></p>
+                                        <p><a href="press.html">Press & Media</a></p>
+                                        <p><a href="privacy-policy.html">Privacy Policy</a></p>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="second">
+                                <label class="second" for="second"><h4 class="widget-title">Contact Info</h4></label>
+                                <div class="content">
+                                    <p>
+                                        <strong> <i class="fas fa-map-marker-alt"></i> Headquarter:</strong>
+                                        650 Castro St suite 121-285, Mountain View, CA 94041, United States.
+                                    </p>
+                                    <p><a href="#" class="view-locations" style="text-decoration:underline;">
+    <i class="fas fa-map-marked-alt"></i>View All Locations
+</a></p>
+                                    <p>
+                                        <strong><i class="fa fa-phone" style="transform: rotate(90deg);"></i> +1 (669) 306-7781</strong>
+                                    </p>
+                                    <p>
+                                        <strong><i class="fas fa-envelope"></i> <a href="mailto:info@grandit.us">info@grandit.us</a></strong>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+            </div>
+
+        <!-- Start Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p>Grand IT @2019-2026 - All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Footer Bottom -->
+        
+        
+        <div id="locationModal" class="custom-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3><i class="fas fa-globe-americas"></i> Our Global Offices</h3>
+            <ul class="location-list">
+                <li><i class="fas fa-map-marker-alt"></i> <strong>New York:</strong> 288 Fulton St Suite 8500, New York, NY 10007, United States</li>
+                <li><i class="fas fa-map-marker-alt"></i> <strong>California:</strong> 650 Castro St suite 121-285, Mountain View, CA 94041, United States</li>
+                <li><i class="fas fa-map-marker-alt"></i> <strong>California:</strong> 1315 S. Grand Ave. Suite 150
+Glendora, CA 91740, United States</li>
+                <li><i class="fas fa-map-marker-alt"></i> <strong>Melbourne:</strong> 4 Freshwater Pl, Southbank VIC 3006, Australia</li>
+                <li><i class="fas fa-map-marker-alt"></i> <strong>London:</strong> 128 City Rd, London EC1V 2NX, United Kingdom</li>
+                 <li><i class="fas fa-map-marker-alt"></i> <strong>Dubai:</strong> Al Jahra Building, Office# 201-206 18th Street - Khalid Bin Al Waleed Rd - Dubai - United Arab Emirates</li>
+                <li><i class="fas fa-map-marker-alt"></i> <strong>India:</strong> 438, 27th Main Rd, 1st Sector, HSR Layout, Bengaluru, Karnataka 560102, India</li>
+                <li><i class="fas fa-map-marker-alt"></i> <strong>Bangladesh:</strong> 36, M. K. Road, Jashore, Bangladesh</li>
+                <li><i class="fas fa-map-marker-alt"></i> <strong>Bangladesh:</strong> Level-5 & Level-6, Bangabandhu Sheikh Mujib Hi-Tech Park, Rajshahi, Bangladesh</li>
+                
+            </ul>
+        </div>
+    </div>
+
+    <style>
+        /* Modal Background */
+        .custom-modal {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            padding-top: 100px;
+            left: 0; top: 0;
+            width: 100%; height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.7);
+        }
+
+        /* Modal Content */
+        .modal-content {
+            background: linear-gradient(135deg, #0056b3, #007bff);
+            margin: auto;
+            padding: 30px;
+            border-radius: 12px;
+            width: 80%;
+            max-width: 600px;
+            color: #fff;
+            box-shadow: 0 0 15px rgba(0,0,0,0.5);
+            animation: fadeIn 0.4s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0; transform: translateY(-20px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+
+        .modal-content h3 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .location-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .location-list li {
+            margin: 15px 0;
+            font-size: 16px;
+        }
+
+        .location-list i {
+            color: #ffd700;
+            margin-right: 8px;
+        }
+
+        .close-modal {
+            color: #fff;
+            float: right;
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close-modal:hover {
+            color: #ffd700;
+        }
+
+        @media (max-width: 768px) {
+            .modal-content {
+                width: 90%;
+                padding: 20px;
+            }
+        }
+    </style>
+
+  <script>
+    const modal = document.getElementById("locationModal");
+    const openBtns = document.querySelectorAll(".view-locations");
+    const closeBtn = document.querySelector(".close-modal");
+
+    openBtns.forEach(btn => {
+        btn.addEventListener("click", function(e) {
+            e.preventDefault();
+            modal.style.display = "block";
+        });
+    });
+
+    closeBtn.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+        
+    </footer>
+    <script>
+const toggleButtons = document.querySelectorAll('.toggle-btn');
+const plans = document.querySelectorAll('.pricing-body');
+
+toggleButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+
+    toggleButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    const period = btn.dataset.period;
+
+    plans.forEach(plan => {
+      const leadsQ = +plan.dataset.leadsQ;
+      const leadsY = +plan.dataset.leadsY;
+      const sendQ  = +plan.dataset.sendQ;
+      const sendY  = +plan.dataset.sendY;
+      const srvQ   = +plan.dataset.serviceQ;
+      const srvY   = +plan.dataset.serviceY;
+
+      // Elements
+      const leadsVal = plan.querySelector('.leads-value');
+      const sendVal  = plan.querySelector('.send-value');
+      const firstLbl = plan.querySelector('.first-label');
+      const srvLbl   = plan.querySelector('.service-label');
+      const srvVal   = plan.querySelector('.service-value');
+      const totalLbl = plan.querySelector('.total-label');
+      const totalVal = plan.querySelector('.total-value');
+      const recLbl   = plan.querySelector('.recurring-label');
+      const recPrice = plan.querySelector('.recurring-price');
+      const recNote  = plan.querySelector('.recurring-note');
+      const rla  = plan.querySelector('.rla');
+
+      if (period === 'yearly') {
+        leadsVal.textContent = `${leadsY.toLocaleString()} / year`;
+        sendVal.textContent  = `${sendY.toLocaleString()} messages / year`;
+
+        firstLbl.textContent = 'First Year Cost';
+        srvLbl.textContent   = 'Yearly Service';
+        srvVal.textContent   = `$${srvY.toLocaleString()}`;
+
+        totalLbl.textContent = 'Total First Year';
+        totalVal.textContent = `$${(srvY + 1500).toLocaleString()}`;
+
+        recLbl.textContent   = 'Starting Second Year';
+        recPrice.innerHTML   = `$${srvY.toLocaleString()} <small>/year</small>`;
+        recNote.textContent  = 'Billed annually (15% discount)';
+        rla.textContent  = '12.5 months after sign up to account for warm up';
+      } else {
+        leadsVal.textContent = `${leadsQ.toLocaleString()} / quarter`;
+        sendVal.textContent  = `${sendQ.toLocaleString()} messages / quarter`;
+
+        firstLbl.textContent = 'First Quarter Cost';
+        srvLbl.textContent   = 'Quarterly Service';
+        srvVal.textContent   = `$${srvQ.toLocaleString()}`;
+
+        totalLbl.textContent = 'Total First Quarter';
+        totalVal.textContent = `$${(srvQ + 1500).toLocaleString()}`;
+
+        recLbl.textContent   = 'Starting Second Quarter';
+        recPrice.innerHTML   = `$${srvQ.toLocaleString()} <small>/quarter</small>`;
+        recNote.textContent  = `($${Math.round(srvQ/3).toLocaleString()}/mo billed quarterly)`;
+        rla.textContent  = '3.5 months after sign up to account for warm up';
+      }
+    });
+  });
+});
+</script>
+ <style>
+        /* Modal Background */
+        .custom-modal {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            padding-top: 100px;
+            left: 0; top: 0;
+            width: 100%; height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.7);
+        }
+
+        /* Modal Content */
+        .modal-content {
+            background: linear-gradient(135deg, #0056b3, #007bff);
+            margin: auto;
+            padding: 30px;
+            border-radius: 12px;
+            width: 80%;
+            max-width: 600px;
+            color: #fff;
+            box-shadow: 0 0 15px rgba(0,0,0,0.5);
+            animation: fadeIn 0.4s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0; transform: translateY(-20px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+
+        .modal-content h3 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .location-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .location-list li {
+            margin: 15px 0;
+            font-size: 16px;
+        }
+
+        .location-list i {
+            color: #ffd700;
+            margin-right: 8px;
+        }
+
+        .close-modal {
+            color: #fff;
+            float: right;
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close-modal:hover {
+            color: #ffd700;
+        }
+
+        @media (max-width: 768px) {
+            .modal-content {
+                width: 90%;
+                padding: 20px;
+            }
+        }
+    </style>
+
+  <script>
+    const modal = document.getElementById("locationModal");
+    const openBtns = document.querySelectorAll(".view-locations");
+    const closeBtn = document.querySelector(".close-modal");
+
+    openBtns.forEach(btn => {
+        btn.addEventListener("click", function(e) {
+            e.preventDefault();
+            modal.style.display = "block";
+        });
+    });
+
+    closeBtn.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+        
+    </footer>
+
+
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='../embed.tawk.to/640c4f7d4247f20fefe5428b/1gr8c9eu5.js';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+
+
+
+
+
+    <!-- jQuery Frameworks
+    ============================================= -->
+    <script src="/assets/js/jquery-1.12.4.min.js"></script>
+    <script src="/assets/js/popper.min.js"></script>
+    <script src="../cdn.jsdelivr.net/npm/bootstrap%405.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="/assets/js/equal-height.min.js"></script>
+    <script src="/assets/js/jquery.appear.js"></script>
+    <script src="/assets/js/jquery.easing.min.js"></script>
+    <script src="/assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="/assets/js/modernizr.custom.13711.js"></script>
+    <script src="/assets/js/owl.carousel.min.js"></script>
+    <script src="/assets/js/wow.min.js"></script>
+    <script src="/assets/js/progress-bar.min.js"></script>
+    <script src="/assets/js/isotope.pkgd.min.js"></script>
+    <script src="/assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="/assets/js/count-to.js"></script>
+    <script src="/assets/js/YTPlayer.min.js"></script>
+    <script src="/assets/js/jquery.nice-select.min.js"></script>
+    <script src="/assets/js/bootsnav.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="../cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+
+
+
+      
+
+
+
+
+
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-L069LN1490');
+  
+  
+  setTimeout(() => {
+    const box = document.getElementById('messageBox');
+    if (box) box.style.display = 'none';
+  }, 5000);
+  
+</script>
+
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/688915e390c42119286ea345/1j1bnr0mn';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+</body>
+
+</html>

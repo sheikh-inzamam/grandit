@@ -1,0 +1,926 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Software ROI Calculator — Grand IT</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:#f7fafc; }
+    .result-gradient { background: linear-gradient(135deg,#4f46e5 0%, #a5b4fc 100%); }
+    .hover-scale:hover { transform: scale(1.02); transition: transform .15s ease-in-out; }
+  </style>
+  
+  
+    <!-- ========== Page Title ========== -->
+    <title>Contact - Grand IT | Innovation Solution</title>
+    <!-- ========== Favicon Icon ========== -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <!-- ========== Start Stylesheet ========== -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/css/themify-icons.css" rel="stylesheet" />
+    <link href="assets/css/flaticon-set.css" rel="stylesheet" />
+    <link href="assets/css/magnific-popup.css" rel="stylesheet" />
+    <link href="assets/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="assets/css/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="assets/css/animate.css" rel="stylesheet" />
+    <link href="assets/css/bootsnav.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.21/css/intlTelInput.css" integrity="sha512-gxWow8Mo6q6pLa1XH/CcH8JyiSDEtiwJV78E+D+QP0EVasFs8wKXq16G8CLD4CJ2SnonHr4Lm/yY2fSI2+cbmw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" integrity="sha512-vKMx8UnXk60zUwyUnUPM3HbQo8QfmNx7+ltw8Pm5zLusl1XIfwcxo8DbWCqMGKaWeNxWA8yrx5v3SaVpMvR3CA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+    
+  .log {
+  display: block;
+  margin: 0 auto 20px auto;  /* Center horizontally, bottom margin */
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+/* Small screens (phones) */
+@media (max-width: 767px) {
+  .log {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 12px;
+    margin-left: auto;
+    margin-right: auto;      /* Center */
+  }
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .log {
+    width: 150px;
+    height: 100px;
+    margin-bottom: 0;        /* Remove bottom margin */
+    margin-left: 0;          /* Align left */
+    margin-right: initial;   /* Remove centering */
+  }
+}
+
+/* Large screens (desktops) */
+@media (min-width: 1025px) {
+  .log {
+    width: 200px;
+    height: 100px;
+    margin-bottom: 0;        /* Remove bottom margin */
+    margin-left: 0;          /* Align left */
+    margin-right: initial;   /* Remove centering */
+  }
+}
+        
+    </style>
+    
+    
+    <style>
+        /* Custom font for a modern look */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7fafc;
+        }
+        /* Custom gradient for the results block */
+        .result-gradient {
+            background: linear-gradient(135deg, #4f46e5 0%, #a5b4fc 100%);
+        }
+        /* Smooth transition for hover effects */
+        .hover-scale:hover {
+            transform: scale(1.02);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+    
+    <style>
+        /* ====================================================================
+           INTERNAL CSS FOR NAVIGATION BAR (With Anonymous Class Names)
+           ==================================================================== */
+
+        /* General Body and Anchor Reset */
+        body {
+            padding-top: 100px; /* Space for the fixed header */
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* 1. Navigation Container and Fixed Position */
+        .primary-header-section {
+            margin-bottom: 10px;
+        }
+        .main-nav-bar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1030;
+            border: none;
+            margin-bottom: 0;
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* 2. Standard Container Setup */
+        .content-wrapper {
+            width: 90%;
+            margin: 0 auto;
+            max-width: 1170px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .nav-layout {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+        }
+        
+        /* 3. Header and Logo Styling */
+        .brand-container {
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
+        .site-logo-link {
+            padding: 0;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+        .site-logo-link img {
+            height: 50px; /* Adjust logo size */
+            width: auto;
+            max-width: 100%;
+        }
+
+        /* 4. Menu Links (Desktop) */
+        .menu-list-collapse {
+            display: block !important; /* Force display for desktop */
+            width: auto;
+        }
+        .menu-list {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .menu-center {
+            justify-content: center;
+            flex-grow: 1;
+        }
+        .menu-list li {
+            margin: 0 15px;ƒ
+            position: relative;
+        }
+        .menu-list li a {
+            display: block;
+            padding: 10px 0;
+            line-height: 60px; /* Vertically center text with nav height */
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        .menu-list li a:hover,
+        .menu-list li a.active-link {
+            color: #4f46e5; /* Active/hover color */
+        }
+        
+        /* 5. Mobile Toggle Button (Hidden on Desktop) */
+        .mobile-toggle-btn {
+            display: none; /* Hide toggle on desktop */
+            padding: 9px 10px;
+            margin-right: 15px;
+            background-color: transparent;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            cursor: pointer;
+            color: #333;
+            font-size: 18px;
+            line-height: 1;
+        }
+        .mobile-toggle-btn .icon {
+             /* Using simple unicode char instead of fa-bars icon */
+            font-style: normal; 
+        }
+
+        /* 6. Media Query for Mobile/Tablet */
+        @media (max-width: 991px) {
+            .nav-layout {
+                justify-content: space-between;
+            }
+            .mobile-toggle-btn {
+                display: block; /* Show toggle button on small screens */
+            }
+            .menu-list-collapse {
+                /* For pure CSS, we hide the menu by default. 
+                   It will not open without JS. */
+                display: none; 
+                position: absolute;
+                top: 80px;
+                left: 0;
+                right: 0;
+                background-color: #fff;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                border-top: 1px solid #eee;
+                padding-bottom: 10px;
+            }
+            .menu-list {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .menu-list li {
+                width: 100%;
+                margin: 0;
+            }
+            .menu-list li a {
+                padding: 10px 20px;
+                line-height: normal;
+                border-bottom: 1px solid #f7f7f7;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+</head>
+<body class="antialiased">
+    
+           <!-- Header -->
+<header id="home" class="fixed w-full top-0 bg-white shadow-md z-50">
+  <nav class="container mx-auto px-4 flex items-center justify-between py-3">
+    <!-- Logo -->
+    <a href="index.html" class="flex items-center space-x-2">
+      <img src="assets/images/Grand%20IT-4.png" alt="Logo" class="h-16 w-auto">
+    </a>
+
+    <!-- Mobile menu button -->
+    <button
+      id="menu-toggle"
+      class="lg:hidden flex items-center px-3 py-2 border rounded text-gray-700 border-gray-300 hover:bg-gray-100 focus:outline-none"
+    >
+      <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+
+    <!-- Navigation Links -->
+    <ul
+      id="nav-menu"
+      class="hidden lg:flex space-x-8 text-gray-700 font-medium transition-all duration-300"
+    >
+      <li>
+        <a href="index.html" class="text-blue-600 font-semibold border-b-2 border-blue-600 pb-1">Home</a>
+      </li>
+      <li>
+        <a href="index.php#about-us" class="hover:text-blue-600 transition">About</a>
+      </li>
+      <li>
+        <a href="index.php#service" class="hover:text-blue-600 transition">Services</a>
+      </li>
+      <li>
+        <a href="index.php#testimonial" class="hover:text-blue-600 transition">Testimonial</a>
+      </li>
+      <li>
+        <a href="contact-us.html" class="hover:text-blue-600 transition">Contact</a>
+      </li>
+    </ul>
+  </nav>
+  
+
+  <!-- Mobile Dropdown Menu -->
+  <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-200">
+    <ul class="flex flex-col space-y-2 p-4 text-gray-700 font-medium">
+      <li><a href="index.html" class="block text-blue-600 font-semibold">Home</a></li>
+      <li><a href="index.php#about-us" class="block hover:text-blue-600">About</a></li>
+      <li><a href="index.php#service" class="block hover:text-blue-600">Services</a></li>
+      <li><a href="index.php#testimonial" class="block hover:text-blue-600">Testimonial</a></li>
+      <li><a href="contact-us.html" class="block hover:text-blue-600">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  toggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+    
+  <div class="max-w-6xl mx-auto p-6">
+    <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+      <div class="p-6 bg-indigo-700 text-white">
+        <h1 class="text-2xl md:text-3xl font-extrabold" style="color:white;">Software ROI Calculator</h1>
+        <p class="text-indigo-200 mt-1">Estimate savings, new revenue, payback, ROI and NPV for your automation investment.</p>
+      </div>
+
+      <main class="grid grid-cols-1 lg:grid-cols-2 gap-8 p-6">
+        <!-- Left: Inputs -->
+        <section>
+          <form method="post" class="space-y-4 bg-white">
+            <h2 class="text-lg font-semibold text-gray-800">Operational Inputs</h2>
+
+            <div>
+              <label class="block text-sm font-medium text-gray-700">Number of employees</label>
+              <input name="employee_count" type="number" min="1" value="5" required class="w-full mt-1 p-2 border rounded" />
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium text-gray-700">Avg weekly hours per employee</label>
+              <input name="weekly_hours" type="number" step="0.5" min="0" value="8" required class="w-full mt-1 p-2 border rounded" />
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium text-gray-700">Fully loaded hourly wage ($)</label>
+              <input name="hourly_wage" type="number" step="0.01" min="0" value="35" required class="w-full mt-1 p-2 border rounded" />
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium text-gray-700">Redeployment rate (%)</label>
+              <input name="redeploy_rate" type="number" step="1" min="0" max="100" value="50" required class="w-full mt-1 p-2 border rounded" />
+            </div>
+
+            <div class="pt-4">
+              <h2 class="text-lg font-semibold text-gray-800">Investment & Timeline</h2>
+
+              <label class="block text-sm font-medium text-gray-700 mt-3">One-time software cost ($)</label>
+              <input name="software_cost" type="number" step="0.01" min="0" value="60000" class="w-full mt-1 p-2 border rounded" />
+
+              <label class="block text-sm font-medium text-gray-700 mt-3">Implementation / Integration cost ($)</label>
+              <input name="implementation_cost" type="number" step="0.01" min="0" value="15000" class="w-full mt-1 p-2 border rounded" />
+
+              <label class="block text-sm font-medium text-gray-700 mt-3">Implementation time (months)</label>
+              <input name="implementation_months" type="number" min="0" step="1" value="2" class="w-full mt-1 p-2 border rounded" />
+
+              <label class="block text-sm font-medium text-gray-700 mt-3">Annual maintenance/support (% of software cost)</label>
+              <input name="annual_maintenance_pct" type="number" step="0.1" min="0" max="100" value="10" class="w-full mt-1 p-2 border rounded" />
+            </div>
+
+            <div class="pt-4">
+              <h2 class="text-lg font-semibold text-gray-800">Advanced (optional)</h2>
+
+              <label class="block text-sm text-gray-700 mt-3">Automation efficiency (fraction of time automated)</label>
+              <input name="automation_efficiency" type="number" step="0.01" min="0" max="1" value="0.85" class="w-full mt-1 p-2 border rounded" />
+
+              <label class="block text-sm text-gray-700 mt-3">Revenue multiplier for redeployed time</label>
+              <input name="revenue_multiplier" type="number" step="0.1" min="0" value="2.5" class="w-full mt-1 p-2 border rounded" />
+
+              <label class="block text-sm text-gray-700 mt-3">Discount rate (for NPV) — decimal (e.g., 0.10 = 10%)</label>
+              <input name="discount_rate" type="number" step="0.01" min="0" max="1" value="0.10" class="w-full mt-1 p-2 border rounded" />
+
+              <label class="block text-sm text-gray-700 mt-3">Analysis period (years)</label>
+              <input name="analysis_years" type="number" min="1" step="1" value="5" class="w-full mt-1 p-2 border rounded" />
+            </div>
+
+            <div class="pt-4">
+              <button type="submit" class="w-full py-3 rounded bg-indigo-600 text-white font-semibold hover:bg-indigo-700">Calculate ROI</button>
+            </div>
+          </form>
+        </section>
+
+        <!-- Right: Results -->
+        <section>
+          <h2 class="text-lg font-semibold text-gray-800 mb-3">Results</h2>
+
+          <div id="calc-placeholder" class="p-6 bg-gray-50 rounded text-gray-600">
+              Enter inputs to see cost savings, revenue opportunity and financial projections (payback, ROI, NPV).
+            </div>
+            <div id="calc-results" style="display:none" class="space-y-4">
+              <div class="result-gradient p-6 rounded-xl shadow-lg text-white text-center hover-scale">
+                <div class="text-sm uppercase opacity-90">Total estimated annual value</div>
+                <div class="text-4xl font-extrabold mt-2" id="res-total"></div>
+                <div class="text-xs mt-1 opacity-90">Cost savings + redeployed revenue per year</div>
+              </div>
+
+              <div class="p-4 bg-white border rounded shadow-sm">
+                <h3 class="font-bold text-indigo-700">Breakdown</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-3">
+                  <div class="p-3 bg-indigo-50 rounded">
+                    <div class="text-sm text-gray-600">Direct labor cost savings / year</div>
+                    <div class="text-2xl font-bold" id="res-savings"></div>
+                    <div class="text-xs text-gray-500 mt-1"><span id="res-hours"></span> hours automated / year</div>
+                  </div>
+                  <div class="p-3 bg-green-50 rounded">
+                    <div class="text-sm text-gray-600">Estimated new revenue / year</div>
+                    <div class="text-2xl font-bold" id="res-revenue"></div>
+                    <div class="text-xs text-gray-500 mt-1"><span id="res-redeployed"></span> hours redeployed / year</div>
+                  </div>
+                </div>
+                <div class="mt-4 text-sm text-gray-600">
+                  <div><strong>One-time investment:</strong> <span id="res-investment"></span></div>
+                  <div><strong>Annual maintenance:</strong> <span id="res-maintenance"></span>/year</div>
+                  <div><strong>Implementation:</strong> <span id="res-impl-months"></span> months (reduces first-year benefit proportionally)</div>
+                </div>
+              </div>
+
+              <div class="p-4 bg-white border rounded shadow-sm">
+                <h3 class="font-bold text-gray-800">Financial projections</h3>
+                <table class="w-full mt-3 text-sm">
+                  <thead>
+                    <tr class="text-left">
+                      <th class="pb-2">Year</th>
+                      <th class="pb-2">Cashflow ($)</th>
+                      <th class="pb-2">Cumulative ($)</th>
+                    </tr>
+                  </thead>
+                  <tbody id="res-projection-table"></tbody>
+                </table>
+                <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-3">
+                  <div class="p-3 bg-gray-50 rounded">
+                    <div class="text-sm text-gray-600">Payback period</div>
+                    <div class="text-xl font-bold" id="res-payback"></div>
+                    <div class="text-xs text-gray-500 mt-1">When cumulative cashflow turns positive</div>
+                  </div>
+                  <div class="p-3 bg-gray-50 rounded">
+                    <div class="text-sm text-gray-600">ROI</div>
+                    <div class="text-xl font-bold" id="res-roi"></div>
+                    <div class="text-xs text-gray-500 mt-1">(Sum of net cashflows - investment) / investment</div>
+                  </div>
+                  <div class="p-3 bg-gray-50 rounded md:col-span-2">
+                    <div class="text-sm text-gray-600">NPV</div>
+                    <div class="text-2xl font-bold mt-1" id="res-npv"></div>
+                    <div class="text-xs text-gray-500 mt-1">Net present value of projected cashflows</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="p-4 bg-indigo-50 rounded text-indigo-800">
+                <strong>Notes:</strong>
+                <ul class="list-disc ml-5 mt-2 text-sm">
+                  <li>Automation efficiency and revenue multiplier are assumptions — adjust to match your business context.</li>
+                  <li>Implementation months reduce the first year's full benefit proportionally (simple pro-rata used).</li>
+                  <li>NPV and ROI are for planning; discuss specifics with finance for capital approvals.</li>
+                </ul>
+              </div>
+            </div>
+        </section>
+      </main>
+
+      <div class="p-6 bg-gray-50 border-t">
+        <div class="text-center text-sm text-gray-600">Need help turning the numbers into a working prototype? We can build a tailored pilot — ask us for a quote.</div>
+      </div>
+    </div>
+  </div>
+  
+          <footer class="bg-dark text-light">
+        <div class="container">
+            <div class="f-items">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 item">
+                        <div class="f-item about">
+                            <img src="assets/images/Grand%20IT-5.png" class="log" alt="Logo">
+                            <p>If you have the Commitment & Desire to develop your business we have the experience and expertise to make it success!</p>
+                           <div class="footer-icons">
+                                <a href="https://www.facebook.com/profile.php?id=61578744989471"><i class="fab fa-facebook"></i></a>
+                                <a href="https://www.instagram.com/grandit.us/"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.linkedin.com/company/granditus"><i class="fab fa-linkedin"></i></a> 
+                                <a href="https://x.com/granditbd"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="col-lg-4 col-md-6 item triggers">
+                            <div class="hide-mobile">
+                                <div class="f-item link">
+                                    <h4 class="widget-title">Trigger Links</h4>
+                                    <ul class="trig-link">
+                                        <li>
+                                            <a href="career.html">Career</a>
+                                        </li>
+                                        <li>
+                                            <a href="team.html">Team</a>
+                                        </li>
+                                        <li>
+                                            <a href="gallery.html">Gallery</a>
+                                        </li>
+                                        <li>
+                                            <a href="press.html">Press & Media</a>
+                                        </li>
+                                        <li>
+                                            <a href="privacy-policy.html">Privacy Policy</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 item">
+                            <div class="hide-mobile">
+                                <div class="f-item">
+                                    <h4 class="widget-title">Contact Info</h4>
+                                    <div class="address">
+                                        <ul>
+                                            <li>
+                                                <strong> <i class="fas fa-map-marker-alt"></i> Headquarter:</strong>
+                                                650 Castro St suite 121-285, Mountain View, CA 94041, United States.
+                                            </li>
+                                             <li><a href="#" class="view-locations" style="text-decoration:underline;">
+    <i class="fas fa-map-marked-alt"></i>View All Locations
+</a></li>
+                                            <li>
+                                                <strong><i class="fa fa-phone" style="transform: rotate(90deg);"></i> +1 (669) 306-7781</strong>
+                                            </li>
+                                            <li>
+                                                <strong><i class="fas fa-envelope"></i> <a href="mailto:info@grandit.us">info@grandit.us</a></strong>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="show-mobile">
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="first">
+                                <label class="first" for="first"><h4 class="widget-title">Trigger Links</h4></label>
+                                <div class="content">
+                                        <p><a href="career.html">Career</a></p>
+                                        <p><a href="team.html">Team</a></p>
+                                        <p><a href="gallery.html">Gallery</a></p>
+                                        <p><a href="press.html">Press & Media</a></p>
+                                        <p><a href="privacy-policy.html">Privacy Policy</a></p>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="second">
+                                <label class="second" for="second"><h4 class="widget-title">Contact Info</h4></label>
+                                <div class="content">
+                                    <p>
+                                        <strong> <i class="fas fa-map-marker-alt"></i> Headquarter:</strong>
+                                        650 Castro St suite 121-285, Mountain View, CA 94041, United States.
+                                    </p>
+                                    <p><a href="#" class="view-locations" style="text-decoration:underline;">
+    <i class="fas fa-map-marked-alt"></i>View All Locations
+</a></p>
+                                    <p>
+                                        <strong><i class="fa fa-phone" style="transform: rotate(90deg);"></i> +1 (669) 306-7781</strong>
+                                    </p>
+                                    <p>
+                                        <strong><i class="fas fa-envelope"></i> <a href="mailto:info@grandit.us">info@grandit.us</a></strong>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+            </div>
+
+        <!-- Start Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p>Grand IT @2019-2026 - All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Footer Bottom -->
+        
+        <div id="locationModal" class="custom-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3><i class="fas fa-globe-americas"></i> Our Global Offices</h3>
+            <ul class="location-list">
+                <li><i class="fas fa-map-marker-alt"></i> <strong>New York:</strong> 288 Fulton St Suite 8500, New York, NY 10007, United States</li>
+                <li><i class="fas fa-map-marker-alt"></i> <strong>California:</strong> 650 Castro St suite 121-285, Mountain View, CA 94041, United States</li>
+                <li><i class="fas fa-map-marker-alt"></i> <strong>California:</strong> 1315 S. Grand Ave. Suite 150
+Glendora, CA 91740, United States</li>
+                <li><i class="fas fa-map-marker-alt"></i> <strong>Melbourne:</strong> 4 Freshwater Pl, Southbank VIC 3006, Australia</li>
+                <li><i class="fas fa-map-marker-alt"></i> <strong>London:</strong> 128 City Rd, London EC1V 2NX, United Kingdom</li>
+                 <li><i class="fas fa-map-marker-alt"></i> <strong>Dubai:</strong> Al Jahra Building, Office# 201-206 18th Street - Khalid Bin Al Waleed Rd - Dubai - United Arab Emirates</li>
+                <li><i class="fas fa-map-marker-alt"></i> <strong>India:</strong> 438, 27th Main Rd, 1st Sector, HSR Layout, Bengaluru, Karnataka 560102, India</li>
+                <li><i class="fas fa-map-marker-alt"></i> <strong>Bangladesh:</strong> 36, M. K. Road, Jashore, Bangladesh</li>
+                <li><i class="fas fa-map-marker-alt"></i> <strong>Bangladesh:</strong> Level-5 & Level-6, Bangabandhu Sheikh Mujib Hi-Tech Park, Rajshahi, Bangladesh</li>
+                
+            </ul>
+        </div>
+    </div>
+
+    <style>
+        /* Modal Background */
+        .custom-modal {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            padding-top: 100px;
+            left: 0; top: 0;
+            width: 100%; height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.7);
+        }
+
+        /* Modal Content */
+        .modal-content {
+            background: linear-gradient(135deg, #0056b3, #007bff);
+            margin: auto;
+            padding: 30px;
+            border-radius: 12px;
+            width: 80%;
+            max-width: 600px;
+            color: #fff;
+            box-shadow: 0 0 15px rgba(0,0,0,0.5);
+            animation: fadeIn 0.4s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0; transform: translateY(-20px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+
+        .modal-content h3 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .location-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .location-list li {
+            margin: 15px 0;
+            font-size: 16px;
+        }
+
+        .location-list i {
+            color: #ffd700;
+            margin-right: 8px;
+        }
+
+        .close-modal {
+            color: #fff;
+            float: right;
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close-modal:hover {
+            color: #ffd700;
+        }
+
+        @media (max-width: 768px) {
+            .modal-content {
+                width: 90%;
+                padding: 20px;
+            }
+        }
+    </style>
+
+  <script>
+    const modal = document.getElementById("locationModal");
+    const openBtns = document.querySelectorAll(".view-locations");
+    const closeBtn = document.querySelector(".close-modal");
+
+    openBtns.forEach(btn => {
+        btn.addEventListener("click", function(e) {
+            e.preventDefault();
+            modal.style.display = "block";
+        });
+    });
+
+    closeBtn.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+    </footer>
+    
+     <!-- jQuery Frameworks
+    ============================================= -->
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/equal-height.min.js"></script>
+    <script src="assets/js/jquery.appear.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/modernizr.custom.13711.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/progress-bar.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/count-to.js"></script>
+    <script src="assets/js/YTPlayer.min.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/bootsnav.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="../cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.21/js/intlTelInput.min.js" integrity="sha512-x1RjK1QHIg0CA4lP7CFG98UXDy04pYBPuepiMd4bkJ7sqEfAPHNmVbkBxVDG3zpnolqMX2cd1mX13HlvwZfA8w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.21/js/intlTelInput-jquery.js" integrity="sha512-OUPxSiNqrb0WKYl/QS0xVCeOwmlG4oX0sdpb+PtSXw/TKJYYWbD22oarHEU53sEpe07BcOCVEvIevLauOmQs8Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.21/js/intlTelInput.js" integrity="sha512-DKk+X87rLS4nxjrKfxekaBOE3kgQAinIJlL5V14u5xJ598XY5IoWPJdtgOqepUoxYfiJ1Cmra6m+b1qeYq2Ifw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.21/js/utils.js" integrity="sha512-7xsxAxddc2CpVmJTb8s4KZQKoQBnHgllEfsTL+MJvTCRTCrAnmZrobxcEtqpAfeq0Dvr9XdZCemonASlx7M6KA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.21/js/utils.min.js" integrity="sha512-LywxLWYHrBmadpoHEatKGen9Jaj5D+MAmKsQiESmK+BMl0qpU1j8HLVXeHQ1cbGKR8q47a7ekTbTnTucxil2uw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='../embed.tawk.to/640c4f7d4247f20fefe5428b/1gr8c9eu5.js';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+
+
+  <script>
+    var input = document.querySelector("#phone");
+    window.intlTelInput(input, {
+      // allowDropdown: false,
+      // autoHideDialCode: false,
+      // autoPlaceholder: "off",
+      // dropdownContainer: document.body,
+      // excludeCountries: ["us"],
+      // formatOnDisplay: false,
+      // geoIpLookup: function(callback) {
+      //   $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+      //     var countryCode = (resp && resp.country) ? resp.country : "";
+      //     callback(countryCode);
+      //   });
+      // },
+      // hiddenInput: "full_number",
+      // initialCountry: "auto",
+      // localizedCountries: { 'de': 'Deutschland' },
+      // nationalMode: false,
+      // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+      // placeholderNumberType: "MOBILE",
+      // preferredCountries: ['cn', 'jp'],
+      // separateDialCode: true,
+      utilsScript: "build/js/utils.js",
+    });
+  </script>
+
+
+
+
+
+    <script>
+            </script>
+
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-L069LN1490');
+  
+   setTimeout(() => {
+    const box = document.getElementById('messageBox');
+    if (box) box.style.display = 'none';
+  }, 5000);
+  
+  
+</script>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/688915e390c42119286ea345/1j1bnr0mn';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+  
+
+<script>
+function fmt(n) { return '$' + n.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ','); }
+function fmtInt(n) { return '$' + Math.round(n).toLocaleString('en-US'); }
+function fmtNum(n) { return Math.round(n).toLocaleString('en-US'); }
+
+function calcAutomation(wh, hw, rr, ec, eff, mult) {
+  var WEEKS=52;
+  var annualHours = wh * ec * WEEKS;
+  var hoursElim = annualHours * eff;
+  var costSavings = hoursElim * hw;
+  var redeployedHours = hoursElim * (rr/100);
+  var revenueOpp = redeployedHours * (hw * mult);
+  return {
+    total: costSavings + revenueOpp,
+    costSavings: costSavings,
+    revenueOpp: revenueOpp,
+    hoursElim: hoursElim,
+    redeployedHours: redeployedHours
+  };
+}
+
+function calcProjection(firstYearValue, initialInvestment, annualMaintenance, analysisYears, discountRate) {
+  var cashflows = [], cumulative = [], cum = -initialInvestment;
+  cashflows[0] = -initialInvestment; cumulative[0] = cum;
+  var npv = cashflows[0];
+  for (var y=1; y<=analysisYears; y++) {
+    var net = firstYearValue - annualMaintenance;
+    cashflows[y] = net;
+    cum += net;
+    cumulative[y] = cum;
+    npv += net / Math.pow(1 + discountRate, y);
+  }
+  var payback = null;
+  if (cumulative[0] >= 0) { payback = 0; }
+  else {
+    for (var y=1; y<=analysisYears; y++) {
+      if (cumulative[y] >= 0) {
+        var prev = cumulative[y-1];
+        var inc = cashflows[y];
+        payback = inc === 0 ? y : (y-1) + (prev < 0 ? (-prev/inc) : 0);
+        break;
+      }
+    }
+  }
+  var sumBenefits = 0;
+  for (var y=1; y<=analysisYears; y++) sumBenefits += cashflows[y];
+  var roi = initialInvestment !== 0 ? ((sumBenefits - initialInvestment) / initialInvestment) * 100 : null;
+  return { cashflows: cashflows, cumulative: cumulative, payback: payback, roi: roi, npv: npv };
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  var form = document.getElementById('roi-form');
+  if (!form) return;
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    var ec = parseFloat(document.querySelector('[name=employee_count]').value);
+    var wh = parseFloat(document.querySelector('[name=weekly_hours]').value);
+    var hw = parseFloat(document.querySelector('[name=hourly_wage]').value);
+    var rr = parseFloat(document.querySelector('[name=redeploy_rate]').value);
+    var sc = parseFloat(document.querySelector('[name=software_cost]').value);
+    var ic = parseFloat(document.querySelector('[name=implementation_cost]').value);
+    var im = parseInt(document.querySelector('[name=implementation_months]').value, 10);
+    var am = parseFloat(document.querySelector('[name=annual_maintenance_pct]').value);
+    var ae = parseFloat(document.querySelector('[name=automation_efficiency]').value);
+    var rm = parseFloat(document.querySelector('[name=revenue_multiplier]').value);
+    var dr = parseFloat(document.querySelector('[name=discount_rate]').value);
+    var ay = parseInt(document.querySelector('[name=analysis_years]').value, 10);
+
+    if (isNaN(ec)||ec<=0||isNaN(wh)||wh<=0||isNaN(hw)||hw<=0||rr<0||rr>100||sc<0||ic<0||am<0||am>100||dr<0||dr>1||ay<=0) {
+      alert('Please enter valid, positive numbers for all required fields. Redeploy rate and percentages must be within valid ranges.');
+      return;
+    }
+
+    var ben = calcAutomation(wh, hw, rr, ec, ae, rm);
+    var annMaint = sc * (am/100);
+    var initInv = sc + ic;
+    var proj = calcProjection(ben.total, initInv, annMaint, ay, dr);
+
+    document.getElementById('res-total').textContent = fmtInt(ben.total);
+    document.getElementById('res-savings').textContent = fmtInt(ben.costSavings);
+    document.getElementById('res-hours').textContent = fmtNum(ben.hoursElim);
+    document.getElementById('res-revenue').textContent = fmtInt(ben.revenueOpp);
+    document.getElementById('res-redeployed').textContent = fmtNum(ben.redeployedHours);
+    document.getElementById('res-investment').textContent = fmt(initInv);
+    document.getElementById('res-maintenance').textContent = fmt(annMaint);
+    document.getElementById('res-impl-months').textContent = im;
+
+    // Projection table
+    var tbody = document.getElementById('res-projection-table');
+    tbody.innerHTML = '';
+    for (var y=0; y<=ay; y++) {
+      var tr = document.createElement('tr');
+      tr.className = y%2===0 ? 'bg-gray-50' : '';
+      tr.innerHTML = '<td class="py-2">' + y + (y===0?' (Initial)':'') + '</td>'
+        + '<td class="py-2">' + fmt(proj.cashflows[y]) + '</td>'
+        + '<td class="py-2">' + fmt(proj.cumulative[y]) + '</td>';
+      tbody.appendChild(tr);
+    }
+
+    document.getElementById('res-payback').textContent = proj.payback === null
+      ? 'Not within ' + ay + ' years'
+      : proj.payback.toFixed(2) + ' years';
+    document.getElementById('res-roi').textContent = proj.roi === null
+      ? 'N/A'
+      : proj.roi.toFixed(1) + '%';
+    document.getElementById('res-npv').textContent = fmt(proj.npv);
+
+    document.getElementById('calc-results').style.display = 'block';
+    document.getElementById('calc-placeholder').style.display = 'none';
+  });
+});
+</script>
+</body>
+</html>

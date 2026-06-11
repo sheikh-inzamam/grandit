@@ -1,0 +1,13 @@
+# robots.txt for www.grandit.us
+
+User-agent: *
+Disallow: /wp-admin/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/
+
+# Allow all other content to be indexed
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.grandit.us/sitemap.xml

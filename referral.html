@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+  var code = new URLSearchParams(window.location.search).get('code');
+  if(code){ document.cookie='referral_code='+encodeURIComponent(code)+';max-age=2592000;path=/'; }
+  window.location.href = 'index.html';
+</script>
+</head>
+<body></body>
+</html>

@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Gallery - Grand IT | Innovation Solution">
+
+    <!-- ========== Page Title ========== -->
+    <title>Gallery - Grand IT | Innovation Solution</title>
+    <!-- ========== Favicon Icon ========== -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <!-- ========== Start Stylesheet ========== -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/css/themify-icons.css" rel="stylesheet" />
+    <link href="assets/css/flaticon-set.css" rel="stylesheet" />
+    <link href="assets/css/magnific-popup.css" rel="stylesheet" />
+    <link href="assets/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="assets/css/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="assets/css/animate.css" rel="stylesheet" />
+    <link href="assets/css/bootsnav.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" integrity="sha512-vKMx8UnXk60zUwyUnUPM3HbQo8QfmNx7+ltw8Pm5zLusl1XIfwcxo8DbWCqMGKaWeNxWA8yrx5v3SaVpMvR3CA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+    
+  .log {
+  display: block;
+  margin: 0 auto 20px auto;  /* Center horizontally, bottom margin */
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+/* Small screens (phones) */
+@media (max-width: 767px) {
+  .log {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 12px;
+    margin-left: auto;
+    margin-right: auto;      /* Center */
+  }
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .log {
+    width: 150px;
+    height: 100px;
+    margin-bottom: 0;        /* Remove bottom margin */
+    margin-left: 0;          /* Align left */
+    margin-right: initial;   /* Remove centering */
+  }
+}
+
+/* Large screens (desktops) */
+@media (min-width: 1025px) {
+  .log {
+    width: 200px;
+    height: 100px;
+    margin-bottom: 0;        /* Remove bottom margin */
+    margin-left: 0;          /* Align left */
+    margin-right: initial;   /* Remove centering */
+  }
+}
+
+.text-content > .text {
+    display: none;
+}
+
+/* Show the corresponding section when radio is checked */
+#homes:checked ~ .col-lg-8 .homes,
+#blog:checked ~ .col-lg-8 .blog,
+#help:checked ~ .col-lg-8 .help,
+#code:checked ~ .col-lg-8 .code,
+#about1:checked ~ .col-lg-8 .about1,
+#about2:checked ~ .col-lg-8 .about2,
+#about3:checked ~ .col-lg-8 .about3,
+#about4:checked ~ .col-lg-8 .about4 {
+    display: block;
+}
+        
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <!-- Preloader Start -->
+    <div class="se-pre-con"></div> 
+    <!-- Preloader Ends -->
+    <!-- Header
+    ============================================= -->
+    <header id="home">
+
+        <!-- Start Navigation -->
+        <nav class="navbar navbar-default navbar-fixed bootsnav">
+
+            <div class="container">
+                <div class="nav-box">
+
+                    <!-- Start Header Navigation -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <a class="navbar-brand" href="index.html">
+                            <img src="assets/images/Grand%20IT-4.png" class="logo logo-display" alt="Logo">
+                        </a>
+                    </div>
+                    <!-- End Header Navigation -->
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="navbar-menu">
+                        <ul class="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp">
+                        <li>
+                            <a href="index.html" class="active">Home</a>
+                        </li>
+                        <li>
+                            <a href="index.php#about-us" >About</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="index.php#service">Services</a>
+                        </li>
+                        <li>
+                            <a href="index.php#testimonial" >Testimonial</a>
+                        </li>
+                        <li>
+                            <a href="contact-us.html">Contact</a>
+                        </li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div>
+            </div>
+
+        </nav>
+        <!-- End Navigation -->
+
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Breadcrumb
+    ============================================= -->
+    <div class="breadcrumb-section">
+        <div class="box-wrapper">
+            <div class="breadcrumb-wrapper">
+                <div class="container">
+                    <div class="row text-center">
+                        <div class="col-12">
+                            <h2 class="breadcrumb-title">Gallery</h2>
+                            <p>Let's walk through our memories.</p>
+                        </div>
+                    </div>
+                    <div class="bg-overlay-breadcrumb"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Breadcrumb -->
+    <section class="press-area" style="margin-top: -250px; padding: 60px 0; margin-bottom: 80px;">
+    <div class="container">
+        <div class="box-wrapper">
+            <div class="content">
+
+                <!-- Desktop View -->
+                <div class="hide-mobile">
+                    <div class="row">
+                        <div class="col-lg-4 news-menu">
+                            <div class="list">
+                                <!-- Radio buttons for toggling -->
+                                <input type="radio" name="slider" checked id="homes">
+                                <input type="radio" name="slider" id="blog">
+                                <input type="radio" name="slider" id="help">
+                                <input type="radio" name="slider" id="code">
+                                <input type="radio" name="slider" id="about1">
+                                <input type="radio" name="slider" id="about2">
+                                <input type="radio" name="slider" id="about3">
+                                <input type="radio" name="slider" id="about4">
+                                <!-- Office Section -->
+                                <div class="press-sec" style="margin-bottom: 50px;">
+                                    <input class="accordion" type="checkbox" id="office" checked>
+                                    <h3><label class="accordion-label" for="office">Office</label></h3>
+                                    <div class="accordion">
+                                        <label for="homes" class="homes menu-label"><span class="title">Exterior</span></label>
+                                        <label for="blog" class="blog menu-label"><span class="title">Interior</span></label>
+                                        <label for="help" class="help menu-label"><span class="title">Group Photos</span></label>
+                                    </div>
+                                </div>
+
+                                <!-- Programs Section -->
+                                <div class="media-sec">
+                                    <input class="accordion" type="checkbox" id="programs" checked>
+                                    <h3><label class="accordion-label" for="programs">Programs</label></h3>
+                                    <div class="accordion">
+                                        <label for="code" class="code menu-label"><span class="title">New Year Celebration 2023</span></label>
+                                        <label for="about1" class="about1 menu-label"><span class="title">BBQ Party</span></label>
+                                        <label for="about2" class="about2 menu-label"><span class="title">4th Year Anniversary</span></label>
+                                        <label for="about3" class="about3 menu-label"><span class="title">Badminton Tournament 2022</span></label>
+                                        <label for="about4" class="about4 menu-label"><span class="title">With Team BAT</span></label>
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Gallery Content -->
+                        <div class="col-lg-8">
+                            <div class="text-content" style="padding: 18px 0;">
+                                <!-- Office - Interior -->
+                                <div class="homes text justify-content-center text-center align-items-center">
+                                    <div class="gall-items">
+                                        <a href="#"><img src="assets/images/gallery/interior1.png" alt=""><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                        <a href="#"><img src="assets/images/gallery/interior2.png" alt=""><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                        <a href="#"><img src="assets/images/gallery/exterior1.png" alt=""><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                        <a href="#"><img src="assets/images/gallery/exterior2.jpg" alt=""><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                         <a href="#"><img src="assets/images/gallery/group1.png" alt=""><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                        <a href="#"><img src="assets/images/gallery/group2.jpg" alt=""><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                    </div>
+                                </div>
+
+                                <!-- Office - Exterior -->
+                                <div class="blog text">
+                                    <div class="gall-items">
+                                           <a href="#"><img src="assets/images/gallery/int1.png" alt=""><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                        <a href="#"><img src="assets/images/gallery/int2.png" alt=""><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                        <a href="#"><img src="assets/images/gallery/int3.png" alt=""><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                        <a href="#"><img src="assets/images/gallery/int4.png" alt=""><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                         <a href="#"><img src="assets/images/gallery/int5.png" alt=""><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                        <a href="#"><img src="assets/images/gallery/int7.png" alt=""><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                    </div>
+                                </div>
+
+                                <!-- Office - Group Photos -->
+                                <div class="help text">
+                                    <div class="gall-items">
+                                           <a href="#"><img src="assets/images/gallery/g1.jpg" alt=""><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                        <a href="#"><img src="assets/images/gallery/g2.jpg" alt=""><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                        <a href="#"><img src="assets/images/gallery/g3.jpg" alt=""><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                        <a href="#"><img src="assets/images/gallery/g4.jpg" alt=""><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                         <a href="#"><img src="assets/images/gallery/g5.jpg" alt=""><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                        <a href="#"><img src="assets/images/gallery/g6.jpg" alt=""><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                    </div>
+                                    </div>
+                                </div>
+
+                                <!-- Programs - New Year Celebration -->
+                                <div class="code text">
+                                    <div class="gall-items">
+                                       <a href="#"><img src="assets/images/gallery/new1.jpg" alt=""><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                        <a href="#"><img src="assets/images/gallery/new2.jpg" alt=""><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                        <a href="#"><img src="assets/images/gallery/new3.jpg" alt=""><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                        <a href="#"><img src="assets/images/gallery/new4.jpg" alt=""><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                         <a href="#"><img src="assets/images/gallery/new5.jpg" alt=""><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                        <a href="#"><img src="assets/images/gallery/new6.jpg" alt=""><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                    </div>
+                                </div>
+
+                                <!-- Programs - Other Events -->
+
+                                <div class="about1 text">
+                                    <div class="gall-items">
+                                        <a href="#"><img src="assets/images/gallery/bbq1.jpg" alt=""><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                        <a href="#"><img src="assets/images/gallery/bbq2.jpg" alt=""><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                        <a href="#"><img src="assets/images/gallery/bbq3.jpg" alt=""><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                        <a href="#"><img src="assets/images/gallery/bbq4.jpg" alt=""><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                         <a href="#"><img src="assets/images/gallery/bbq5.jpg" alt=""><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                        <a href="#"><img src="assets/images/gallery/bbq6.jpg" alt=""><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                    </div>
+                                </div>
+                                
+                                <div class="about2 text">
+                                    <div class="gall-items">
+                                        <a href="#"><img src="assets/images/gallery/celeb1.jpg" alt=""><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                        <a href="#"><img src="assets/images/gallery/celeb2.jpg" alt=""><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                        <a href="#"><img src="assets/images/gallery/celeb3.jpg" alt=""><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                        <a href="#"><img src="assets/images/gallery/celeb4.jpg" alt=""><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                         <a href="#"><img src="assets/images/gallery/celeb5.jpg" alt=""><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                        <a href="#"><img src="assets/images/gallery/celeb6.jpg" alt=""><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                    </div>
+                                </div>
+                                
+                                <div class="about3 text">
+                                    <div class="gall-items">
+                                        <a href="#"><img src="assets/images/gallery/mint1.jpg" alt=""><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                        <a href="#"><img src="assets/images/gallery/mint2.jpg" alt=""><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                        <a href="#"><img src="assets/images/gallery/mint3.jpg" alt=""><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                        <a href="#"><img src="assets/images/gallery/mint4.jpg" alt=""><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                         <a href="#"><img src="assets/images/gallery/mint5.jpg" alt=""><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                        <a href="#"><img src="assets/images/gallery/mint6.jpg" alt=""><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                    </div>
+                                </div>
+                                
+                                <div class="about4 text">
+                                    <div class="gall-items">
+                                        <a href="#"><img src="assets/images/gallery/bat1.jpg" alt=""><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                        <a href="#"><img src="assets/images/gallery/bat2.jpg" alt=""><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                        <a href="#"><img src="assets/images/gallery/bat3.jpg" alt=""><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile View -->
+                <div class="show-mobile">
+                    <div class="top-button">
+                        <input class="mobile-filter" type="checkbox" id="filter-img">
+                        <label class="filter-img" for="filter-img"><i class="fa fa-filter"></i>Filter<span>+</span></label>
+                        <div class="filter-content" id="filter-head">
+                            <table>
+                                <tr><td colspan="3" class="flt" data-filter="all">No Filter</td></tr>
+                                <tr>
+                                    <td><a class="flt" data-filter="interior">Interior</a></td>
+                                    <td><a class="flt" data-filter="exterior">Exterior</a></td>
+                                    <td><a class="flt" data-filter="group">Group Photo</a></td>
+                                </tr>
+                                <tr><td colspan="3" class="flt" data-filter="code">New Year Celebration 2023</td></tr>
+                                <tr><td class="flt" data-filter="about1">BBQ Party</td><td colspan="2" class="flt" data-filter="about2">4th Year Anniversary</td></tr>
+                                <tr><td colspan="3" class="flt" data-filter="about3">Badminton Tournament 2022</td></tr>
+                                <tr><td colspan="3" class="flt" data-filter="about4">With Team BAT</td></tr>
+                               
+                            </table>
+                        </div>
+
+                        <!-- Mobile Gallery -->
+                        <div class="col-lg-8">
+                            <div class="text-content" style="padding:18px 0;">
+                                <div class="homes text justify-content-center text-center align-items-center">
+                                    <div class="gall-items" id="store-items">
+                                        <a href="#" class="store-item exterior"><img src="assets/images/gallery/interior1.png" alt="" class="store-img"><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                        <a href="#" class="store-item exterior"><img src="assets/images/gallery/interior2.png" alt="" class="store-img"><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                        <a href="#" class="store-item exterior"><img src="assets/images/gallery/exterior1.png" alt="" class="store-img"><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                        <a href="#" class="store-item exterior"><img src="assets/images/gallery/exterior2.jpg" alt="" class="store-img"><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                         <a href="#" class="store-item exterior"><img src="assets/images/gallery/group1.png" alt="" class="store-img"><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                        <a href="#" class="store-item exterior"><img src="assets/images/gallery/group2.jpg" alt="" class="store-img"><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                        
+                                          <a href="#" class="store-item interior"><img src="assets/images/gallery/int1.png" alt="" class="store-img"><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                        <a href="#" class="store-item interior"><img src="assets/images/gallery/int2.png" alt="" class="store-img"><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                        <a href="#" class="store-item interior"><img src="assets/images/gallery/int3.png" alt="" class="store-img"><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                        <a href="#" class="store-item interior"><img src="assets/images/gallery/int4.png" alt="" class="store-img"><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                         <a href="#" class="store-item interior"><img src="assets/images/gallery/int5.png" alt="" class="store-img"><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                        <a href="#" class="store-item interior"><img src="assets/images/gallery/int7.png" alt="" class="store-img"><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                        
+                                        
+                                        <a href="#" class="store-item group"><img src="assets/images/gallery/g1.jpg" alt="" class="store-img"><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                        <a href="#" class="store-item group"><img src="assets/images/gallery/g2.jpg" alt="" class="store-img"><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                         <a href="#" class="store-item group"><img src="assets/images/gallery/g3.jpg" alt="" class="store-img"><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                        <a href="#" class="store-item group"><img src="assets/images/gallery/g4.jpg" alt="" class="store-img"><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                         <a href="#" class="store-item group"><img src="assets/images/gallery/g5.jpg" alt="" class="store-img"><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                        <a href="#" class="store-item group"><img src="assets/images/gallery/g6.jpg" alt="" class="store-img"><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                        <a href="#" class="store-item code"><img src="assets/images/gallery/new1.jpg" alt="" class="store-img"><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                           <a href="#" class="store-item code"><img src="assets/images/gallery/new2.jpg" alt="" class="store-img"><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                           <a href="#" class="store-item code"><img src="assets/images/gallery/new3.jpg" alt="" class="store-img"><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                           <a href="#" class="store-item code"><img src="assets/images/gallery/new4.jpg" alt="" class="store-img"><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                           <a href="#" class="store-item code"><img src="assets/images/gallery/new5.jpg" alt="" class="store-img"><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                           <a href="#" class="store-item code"><img src="assets/images/gallery/new6.jpg" alt="" class="store-img"><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                           
+                                        <a href="#" class="store-item about1"><img src="assets/images/gallery/bbq1.jpg" alt="" class="store-img"><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                           <a href="#" class="store-item about1"><img src="assets/images/gallery/bbq2.jpg" alt="" class="store-img"><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                           
+                                            <a href="#" class="store-item about1"><img src="assets/images/gallery/bbq3.jpg" alt="" class="store-img"><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                           <a href="#" class="store-item about1"><img src="assets/images/gallery/bbq4.jpg" alt="" class="store-img"><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                            <a href="#" class="store-item about1"><img src="assets/images/gallery/bbq5.jpg" alt="" class="store-img"><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                           <a href="#" class="store-item about1"><img src="assets/images/gallery/bbq6.jpg" alt="" class="store-img"><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                           
+                                        <a href="#" class="store-item about2"><img src="assets/images/gallery/celeb1.jpg" alt="" class="store-img"><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                        <a href="#" class="store-item about2"><img src="assets/images/gallery/celeb2.jpg" alt="" class="store-img"><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                        <a href="#" class="store-item about2"><img src="assets/images/gallery/celeb3.jpg" alt="" class="store-img"><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                        <a href="#" class="store-item about2"><img src="assets/images/gallery/celeb4.jpg" alt="" class="store-img"><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                        <a href="#" class="store-item about2"><img src="assets/images/gallery/celeb5.jpg" alt="" class="store-img"><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                        <a href="#" class="store-item about2"><img src="assets/images/gallery/celeb6.jpg" alt="" class="store-img"><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                        
+                                        <a href="#" class="store-item about3"><img src="assets/images/gallery/mint1.jpg" alt="" class="store-img"><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                         <a href="#" class="store-item about3"><img src="assets/images/gallery/mint2.jpg" alt="" class="store-img"><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                          <a href="#" class="store-item about3"><img src="assets/images/gallery/mint3.jpg" alt="" class="store-img"><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                         <a href="#" class="store-item about3"><img src="assets/images/gallery/mint4.jpg" alt="" class="store-img"><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                          <a href="#" class="store-item about3"><img src="assets/images/gallery/mint5.jpg" alt="" class="store-img"><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                         <a href="#" class="store-item about3"><img src="assets/images/gallery/mint6.jpg" alt="" class="store-img"><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                         
+                                        <a href="#" class="store-item about4"><img src="assets/images/gallery/bat1.jpg" alt="" class="store-img"><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                        <a href="#" class="store-item about4"><img src="assets/images/gallery/bat2.jpg" alt="" class="store-img"><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                        <a href="#" class="store-item about4"><img src="assets/images/gallery/bat3.jpg" alt="" class="store-img"><div class="image_overlay"><i class="bi bi-arrows-fullscreen"></i></div></a>
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- end top-button -->
+                </div> <!-- end show-mobile -->
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- News Letter -->
+    
+    <div class="newsletter-area" style="background: #ebf8ff;padding: 60px 0px;">
+        <div class="container">
+            <div class="row align-items-center justify-content-center" >
+                <div class="col-lg-4 align-items-center justify-content-center">
+                    <div class="news-content d-flex align-items-center">
+                        <img src="assets/images/email.webp" alt="">
+                        <p><strong>Subscribe</strong> your email for <br><strong>Newsletter</strong> & Stay up to date</p>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <form method="post" id="newsletter-form" action="https://formspree.io/f/NEWSLETTER_FORM_ID">                        <div class="form-box d-flex">
+                            <input class="form-control" type="email" name="email" placeholder="Email Address" required>
+                            <button type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+(function(){
+  var f=document.getElementById('newsletter-form');
+  if(!f)return;
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var data=new FormData(f);
+    fetch(f.action,{method:'POST',body:data,headers:{'Accept':'application/json'}})
+      .then(function(r){return r.json();})
+      .then(function(d){
+        f.innerHTML='<p style="color:#1e96f8;font-weight:600;margin:0;">Thanks for subscribing!</p>';
+      }).catch(function(){alert('Subscription failed, please try again.');});
+  });
+})();
+</script>
+    <!-- Footer -->
+<footer class="bg-dark text-light">
+    <div class="container">
+        <div class="f-items">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 item">
+                    <div class="f-item about">
+                        <img src="assets/images/Grand%20IT-5.png" class="log" alt="Logo">
+                        <p>If you have the Commitment & Desire to develop your business we have the experience and expertise to make it success!</p>
+                        <div class="footer-icons">
+                                <a href="https://www.facebook.com/profile.php?id=61578744989471"><i class="fab fa-facebook"></i></a>
+                                <a href="https://www.instagram.com/grandit.us/"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.linkedin.com/company/granditus"><i class="fab fa-linkedin"></i></a> 
+                                <a href="https://x.com/granditbd"><i class="fab fa-twitter"></i></a>
+                            </div>
+                    </div>
+                </div>
+                    <div class="col-lg-4 col-md-6 item triggers">
+                        <div class="hide-mobile">
+                            <div class="f-item link">
+                                <h4 class="widget-title">Trigger Links</h4>
+                                <ul class="trig-link">
+                                    <li>
+                                        <a href="career.html">Career</a>
+                                    </li>
+                                    <li>
+                                        <a href="team.html">Team</a>
+                                    </li>
+                                    <li>
+                                        <a href="gallery.html">Gallery</a>
+                                    </li>
+                                    <li>
+                                        <a href="press.html">Press & Media</a>
+                                    </li>
+                                    <li>
+                                        <a href="privacy-policy.html">Privacy Policy</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 item">
+                        <div class="hide-mobile">
+                            <div class="f-item">
+                                <h4 class="widget-title">Contact Info</h4>
+                                <div class="address">
+                                    <ul>
+                                        <li>
+                                            <strong> <i class="fas fa-map-marker-alt"></i> Headquarter:</strong>
+                                            650 Castro St suite 121-285, Mountain View, CA 94041, United States.
+                                        </li>
+                                        <li><a href="#" class="view-locations" style="text-decoration:underline;">
+    <i class="fas fa-map-marked-alt"></i>View All Locations
+</a></li>
+                                        <li>
+                                            <strong><i class="fa fa-phone" style="transform: rotate(90deg);"></i> +1 (669) 306-7781</strong>
+                                        </li>
+                                        <li>
+                                            <strong><i class="fas fa-envelope"></i> <a href="mailto:info@grandit.us">info@grandit.us</a></strong>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="show-mobile">
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="first">
+                            <label class="first" for="first"><h4 class="widget-title">Trigger Links</h4></label>
+                            <div class="content">
+                                    <p><a href="career.html">Career</a></p>
+                                    <p><a href="team.html">Team</a></p>
+                                    <p><a href="gallery.html">Gallery</a></p>
+                                    <p><a href="press.html">Press & Media</a></p>
+                                    <p><a href="privacy-policy.html">Privacy Policy</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="second">
+                            <label class="second" for="second"><h4 class="widget-title">Contact Info</h4></label>
+                            <div class="content">
+                                <p>
+                                    <strong> <i class="fas fa-map-marker-alt"></i> Headquarter:</strong>
+                                    650 Castro St suite 121-285, Mountain View, CA 94041, United States.
+                                </p>
+                                <p><a href="#" class="view-locations" style="text-decoration:underline;">
+    <i class="fas fa-map-marked-alt"></i>View All Locations
+</a></p>
+                                <p>
+                                    <strong><i class="fa fa-phone" style="transform: rotate(90deg);"></i> +1 (669) 306-7781</strong>
+                                </p>
+                                <p>
+                                    <strong><i class="fas fa-envelope"></i> <a href="mailto:info@grandit.us">info@grandit.us</a></strong>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+        </div>
+
+    <!-- Start Footer Bottom -->
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>Grand IT @2019-2026 - All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Footer Bottom -->
+    
+     <div id="locationModal" class="custom-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3><i class="fas fa-globe-americas"></i> Our Global Offices</h3>
+            <ul class="location-list">
+                <li><i class="fas fa-map-marker-alt"></i> <strong>New York:</strong> 288 Fulton St Suite 8500, New York, NY 10007, United States</li>
+                <li><i class="fas fa-map-marker-alt"></i> <strong>California:</strong> 650 Castro St suite 121-285, Mountain View, CA 94041, United States</li>
+                <li><i class="fas fa-map-marker-alt"></i> <strong>California:</strong> 1315 S. Grand Ave. Suite 150
+Glendora, CA 91740, United States</li>
+                <li><i class="fas fa-map-marker-alt"></i> <strong>Melbourne:</strong> 4 Freshwater Pl, Southbank VIC 3006, Australia</li>
+                <li><i class="fas fa-map-marker-alt"></i> <strong>London:</strong> 128 City Rd, London EC1V 2NX, United Kingdom</li>
+                 <li><i class="fas fa-map-marker-alt"></i> <strong>Dubai:</strong> Al Jahra Building, Office# 201-206 18th Street - Khalid Bin Al Waleed Rd - Dubai - United Arab Emirates</li>
+                <li><i class="fas fa-map-marker-alt"></i> <strong>India:</strong> 438, 27th Main Rd, 1st Sector, HSR Layout, Bengaluru, Karnataka 560102, India</li>
+                <li><i class="fas fa-map-marker-alt"></i> <strong>Bangladesh:</strong> 36, M. K. Road, Jashore, Bangladesh</li>
+                <li><i class="fas fa-map-marker-alt"></i> <strong>Bangladesh:</strong> Level-5 & Level-6, Bangabandhu Sheikh Mujib Hi-Tech Park, Rajshahi, Bangladesh</li>
+                
+            </ul>
+        </div>
+    </div>
+
+    <style>
+        /* Modal Background */
+        .custom-modal {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            padding-top: 100px;
+            left: 0; top: 0;
+            width: 100%; height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.7);
+        }
+
+        /* Modal Content */
+        .modal-content {
+            background: linear-gradient(135deg, #0056b3, #007bff);
+            margin: auto;
+            padding: 30px;
+            border-radius: 12px;
+            width: 80%;
+            max-width: 600px;
+            color: #fff;
+            box-shadow: 0 0 15px rgba(0,0,0,0.5);
+            animation: fadeIn 0.4s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0; transform: translateY(-20px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+
+        .modal-content h3 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .location-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .location-list li {
+            margin: 15px 0;
+            font-size: 16px;
+        }
+
+        .location-list i {
+            color: #ffd700;
+            margin-right: 8px;
+        }
+
+        .close-modal {
+            color: #fff;
+            float: right;
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close-modal:hover {
+            color: #ffd700;
+        }
+
+        @media (max-width: 768px) {
+            .modal-content {
+                width: 90%;
+                padding: 20px;
+            }
+        }
+    </style>
+
+  <script>
+    const modal = document.getElementById("locationModal");
+    const openBtns = document.querySelectorAll(".view-locations");
+    const closeBtn = document.querySelector(".close-modal");
+
+    openBtns.forEach(btn => {
+        btn.addEventListener("click", function(e) {
+            e.preventDefault();
+            modal.style.display = "block";
+        });
+    });
+
+    closeBtn.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+    
+</footer>
+
+    <!-- jQuery Frameworks
+    ============================================= -->
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/equal-height.min.js"></script>
+    <script src="assets/js/jquery.appear.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/modernizr.custom.13711.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/progress-bar.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/count-to.js"></script>
+    <script src="assets/js/YTPlayer.min.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/bootsnav.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="../cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+        <script>
+                    </script>
+
+
+    <script>
+    filterObjects("all");
+        (function(){
+            const buttons = document.querySelectorAll('.flt')
+            const storeImages = document.querySelectorAll('.store-item')
+
+            buttons.addEventListener('click', (e) => {
+                e.preventDefault()
+                const filter = e.target.dataset.filter
+
+                storeImages.forEach((item) => {
+                    if(filter == 'all'){
+                        item.style.display = 'block'
+                    }else{
+                        if(item.classList.contains(filter)){
+                            item.style.display = 'block'
+                        }else{
+                            item.style.display = 'none'
+                        }
+                    }
+                })
+            })
+        })();
+        
+        setTimeout(() => {
+    const box = document.getElementById('messageBox');
+    if (box) box.style.display = 'none';
+  }, 5000);
+    </script>
+
+
+    
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-L069LN1490');
+</script>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/688915e390c42119286ea345/1j1bnr0mn';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const radios = document.querySelectorAll('input[name="slider"]');
+    const sections = {
+        homes: document.querySelectorAll('.homes.text'),
+        blog: document.querySelectorAll('.blog.text'),
+        help: document.querySelectorAll('.help.text'),
+        code: document.querySelectorAll('.code.text'),
+        about1: document.querySelectorAll('.about1.text'),
+        about2: document.querySelectorAll('.about2.text'),
+        about3: document.querySelectorAll('.about3.text'),
+        about4: document.querySelectorAll('.about4.text'),
+    };
+
+    function hideAll() {
+        Object.values(sections).forEach(group => {
+            group.forEach(el => el.style.display = 'none');
+        });
+    }
+
+    radios.forEach(radio => {
+        radio.addEventListener('change', function() {
+            hideAll();
+            if(this.checked && sections[this.id]) {
+                sections[this.id].forEach(el => el.style.display = 'block');
+            }
+        });
+    });
+
+    // Show default checked section on page load
+    const defaultChecked = document.querySelector('input[name="slider"]:checked');
+    if(defaultChecked && sections[defaultChecked.id]) {
+        sections[defaultChecked.id].forEach(el => el.style.display = 'block');
+    }
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const filterButtons = document.querySelectorAll(".show-mobile .flt");
+    const storeItems = document.querySelectorAll(".show-mobile .store-item");
+
+    filterButtons.forEach(btn => {
+        btn.addEventListener("click", () => {
+            const filter = btn.getAttribute("data-filter");
+
+            // Remove active class from all filters
+            filterButtons.forEach(b => b.classList.remove("active"));
+            // Add active class to clicked filter
+            btn.classList.add("active");
+
+            // Show or hide images based on filter
+            storeItems.forEach(item => {
+                if (filter === "all" || item.classList.contains(filter)) {
+                    item.style.display = "inline-block";
+                } else {
+                    item.style.display = "none";
+                }
+            });
+
+            // Close filter menu after selection (optional)
+            document.querySelector(".mobile-filter").checked = false;
+        });
+    });
+});
+</script>
+
+<script>
+// Select all labels in the sidebar
+const labels = document.querySelectorAll('.menu-label');
+
+// Function to clear previous active
+function clearActive() {
+    labels.forEach(label => {
+        label.style.color = ''; // remove inline color
+        label.style.fontWeight = ''; // remove inline font-weight
+    });
+}
+
+// Function to activate a label
+function activateLabel(label) {
+    clearActive(); // remove previous
+    label.style.color = '#003ea3'; // active color
+    label.style.fontWeight = 'bold'; // optional emphasis
+}
+
+// Add click listener to all labels
+labels.forEach(label => {
+    label.addEventListener('click', () => {
+        activateLabel(label);
+    });
+});
+
+// --- Set preselected on page load ---
+window.addEventListener('DOMContentLoaded', () => {
+    labels.forEach(label => {
+        const inputId = label.getAttribute('for'); // get the input id
+        const input = document.getElementById(inputId);
+        if (input && input.checked) {
+            activateLabel(label); // activate the preselected one
+        }
+    });
+});
+
+</script>
+</body>
+
+
+</html>

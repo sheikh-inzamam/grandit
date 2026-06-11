@@ -1,0 +1,5 @@
+time="2025-08-03T15:09:10-04:00" level=error msg="Error executing CLI: panel credentials not found"
+time="2025-08-03T15:09:35-04:00" level=info msg="Domain grandit.us is now under management"
+time="2025-08-03T15:09:35-04:00" level=info msg="Starting AutoSSL process..."
+time="2025-08-03T15:09:35-04:00" level=info msg="Result[grandit.us]"
+time="2025-08-03T15:09:35-04:00" level=info msg="AutoSSL process completed."
